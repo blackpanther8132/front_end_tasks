@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	<title>img-slider</title>
+	<style type="text/css">
+		body{
+			background:grey;
+		}
+		.slider{
+			width:500px;
+			height: 400px;
+			background:url("image/image1.png");
+			margin: 100px auto;
+			border: 1px solid grey;
+			border-radius:10px;
+			animation: slide 15s infinite;
+		}
+		@keyframes slide{
+			25%{
+				background:url("image/image2.png");
+			}
+			50%{
+				background:url("image/image3.png");
+			}
+
+			75%{
+				background:url("image/image5.png");
+			}
+
+			100%{
+				background:url("image/image4.png");
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+<div class="slider">
+</div>
+</body>
+</html>

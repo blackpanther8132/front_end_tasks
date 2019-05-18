@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<div class="searchbox">
+  <div class="header">
+    <h1>Contacts</h1>
+    <input onkeyup="search()" type="text" id="value" placeholder="Type to Search">
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <span class="name">Raju</span>
+    </div>
+
+    <div class="profile">
+      <span class="name">chakri</span>
+    </div>
+
+    <div class="profile">
+      <span class="name">nagraj</span>
+    </div>
+
+    <div class="profile">
+       <span class="name">srikanth</span>
+    </div>
+
+    <div class="profile">
+      <span class="name">naveen</span>
+    </div>
+
+    <div class="profile">
+      <span class="name">mahesh</span>
+    </div>
+    <div class="profile">
+
+      <span class="name">vikram</span>
+    </div>
+    <div class="profile">
+      <span class="name">ramu</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  function search() {
+
+    var val,name,profile,i;
+
+    val = document.getElementById("value").value.toUpperCase();
+    profile = document.getElementsByClassName("profile");
+
+    for(i=0;i<profile.length;i++)
+      {
+        name = profile[i].getElementsByClassName("name");
+        if(name[0].innerHTML.toUpperCase().indexOf(val) > -1)
+          {
+            profile[i].style.display = "flex";
+          }
+      else{
+            profile[i].style.display = "none";
+          }
+      }
+  }
+</script>
+
+  </body>
+</html>
