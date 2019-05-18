@@ -1,0 +1,66 @@
+body div.clc {
+  text-align: center;
+  width: 414px;
+  margin: 0 auto;
+}
+
+.hd{
+  align-content: center;
+}
+div input[type='button'], button {
+  width: 100px;
+  height: 50px;
+  margin: 2px 0;
+  cursor: pointer;
+  border:none;
+
+}
+
+div input[type="text"], button {
+   height: 50px;
+  width: 204px;
+  background-image: linear-gradient(to bottom right,grey,white);
+  color: black;
+  padding: 12px 20px;
+    margin-top: 100px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border:none;
+     transition: 0.4s;
+}
+
+div input[type="text"]:hover, button:hover {
+transform: scale(0.9);
+}
+div.results input{
+  height: 50px;
+  width:100%;
+  transition: 0.4s;
+}
+
+div.results input {
+background-image: linear-gradient(to bottom right, white,red);
+  color: #fff;
+
+}
+div.results input:hover{
+  transform: scale(0.9);
+}
+#one, #two ,#three,#four,#five,#six,#seven,#eight,#nine,#zero,#decimal
+{
+  background-image: linear-gradient(to bottom right, blue, white);
+  transition: 0.4s;
+}
+#one:hover, #two:hover ,#three:hover,#four:hover,#five:hover,#six:hover,#seven:hover,#eight:hover,#nine:hover,#zero:hover,#decimal:hover{
+  transform: scale(0.9);
+}
+#plus, #minus, #by, #devide, #percent {
+background-image: linear-gradient(to bottom right, white, green);
+  color: #fff;  
+   transition: 0.4s;
+  font-size: 16px;
+}
+#plus:hover, #minus:hover, #by:hover, #devide:hover, #percent:hover{
+transform: scale(0.9);
+}
