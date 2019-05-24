@@ -1,0 +1,103 @@
+.livechannel_page {
+    height: 80%;
+}
+.livechannel_card {
+    padding-top: 0;
+    max-height: 50%;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll !important;
+    margin-bottom: 20px;
+}
+.livechannel_card_width {
+    max-height: 100%;
+    height: 100%;
+}
+.livechannel_card::-webkit-scrollbar {
+    width: 6px;
+}
+.livechannel_card:hover::-webkit-scrollbar {
+    width: 6px;
+}   
+.livechannel_card:hover::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+
+.livechannel_card_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.livechannel_card_content {
+
+}
+.livechannel_content_section {
+    width: 100%;
+}
+.livechannel_content_section::-webkit-scrollbar {
+    height: 6px;
+}
+.livechannel_content_section:hover::-webkit-scrollbar {
+    height: 6px;
+}   
+.livechannel_content_section:hover::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+.livechannel_page .channel_icon {
+    border: 2px solid green;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px 2%;
+    display: inline-block;
+}
+.livechannel_page .channel_icon.channel_error {
+    border: 2px solid red;
+}
+.livechannel_page .channel_icon .yt-img-shadow {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.livechannel_page .channel_icon {
+    cursor: pointer;
+}
+.livechannel_sections {
+    margin-bottom: 20px;
+}
+
+
+
+/* chat */
+.livechannel_chat_card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: none !important;
+}
+.chatpage_section > div > div > div:nth-child(2){
+    height: 80% !important;
+    min-height: 60% !important;
+}
+.chatpage_section > div > div {
+    max-width: 100% !important;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+    height: 90%;
+}
+.chatpage_section > div {
+    position: absolute !important;
+    width: 100%;
+    margin: 0 !important;
+    padding-top: 0;
+    margin-left: -5px;
+    top: 0;
+}
+
+
+/* .sc-chat-window.closed, .livechannel_card_width {
+    height: 100% !important;
+}
+.sc-chat-window.opened, .livechannel_card_width {
+    height: 50% !important;
+} */
