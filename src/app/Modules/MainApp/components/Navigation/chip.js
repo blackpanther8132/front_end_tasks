@@ -20,6 +20,7 @@ function Chips() {
   const classes = useStyles();
 
   function handleClick() {
+    
     <Chip
         background-color="primary"
       />
