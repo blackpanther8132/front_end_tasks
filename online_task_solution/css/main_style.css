@@ -1,0 +1,147 @@
+
+body{
+	overflow-x: hidden;
+}
+.img1{
+  position: relative;
+  right: 0px;
+}
+.feature_area{
+	position: relative;
+	top:80px;
+	padding-bottom:15px;
+}
+.feature_area1 p{
+color:#666666;
+}
+table{
+	margin-top:30px;
+	border-left:2px solid grey;
+}
+
+.tbl2 table{
+	margin-top:30px;
+	border-left:2px solid white;
+}
+
+.btn{
+	font-weight: bold;
+	margin-top:20px;
+color:#F5F5F5;
+background:#FA8072;
+cursor: pointer;
+border-radius:0px;
+}
+ul li a{
+	color: black;
+}
+input[type=text]{
+	border:none;
+	background:none;
+	border-bottom:1px solid grey;
+}
+input[type=text]:focus{
+		border:none;
+	border-bottom:1px solid blue;
+}
+.feature_item1 {
+  text-align: center;
+  padding: 40px 0px 60px 0px;
+  text-align:justify;
+  }
+  .feature_item1 h4{
+  	padding-bottom:50px;
+  }
+  .feature_item1 a{
+  	color: red;
+  }
+.tbl1{
+  position:relative;
+  top:60PX;
+   padding-bottom:80px;
+}
+  .tbl2{
+  	color:white;
+  }
+  .feature_area2{
+
+  padding-bottom:40px;
+  }
+           
+.ldr{
+  position:fixed;
+  top:0px;
+  border-top:2px solid red;
+
+  text-align:center;
+  animation: line 4s linear forwards;
+}
+
+@keyframes line {
+  from {
+    left:0%;
+    width:0%;
+  }
+  to {
+    left:0%;
+    width:100%;
+  }
+}
+
+.ldr1{
+  position:fixed;
+  bottom:0px;
+  border-bottom:2px solid red;
+
+  text-align:center;
+  animation: lin 4s linear forwards;
+}
+
+@keyframes lin {
+  from {
+    right:0%;
+    width:0%;
+  }
+  to {
+    right:0%;
+    width:100%;
+  }
+}
+.ldr2{
+  position:fixed;
+  left:0px;
+  border-left:2px solid red;
+
+  text-align:center;
+  animation: linn 4s linear forwards;
+}
+
+@keyframes linn {
+  from {
+    top:0%;
+    height:0%;
+  }
+  to {
+    top:0%;
+    height:100%;
+  }
+}
+.ldr3{
+  position:fixed;
+  right:0px;
+  border-right:2px solid red;
+
+  text-align:center;
+  animation: linnn 4s linear forwards;
+}
+
+@keyframes linnn {
+  from {
+    bottom:0%;
+    height:0%;
+  }
+  to {
+    bottom:0%;
+    height:100%;
+  }
+}
