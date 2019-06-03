@@ -170,43 +170,10 @@ class LiveChannelPage extends Component {
         return (
             <div className="livechannel_page">
                 <div className="clearfix"></div>
-                {/* <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                            Options
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                            <DropdownItem>
-                                Option 1
-                            </DropdownItem>
-                            <DropdownItem>
-                                Option 2
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>
-                                Reset
-                            </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                        </Nav>
-                    </Collapse>
-                </Navbar> */}
+                 
                 <Card className={value ? "livechannel_card" : "livechannel_card livechannel_card_width"} >
-                    <div className = "live_language">
-                        <div>Language(2)</div>
-                        <div>Categories(All)</div>
-                    </div>
-                    {/* <div className={classes.root}>
+            
+                     <div className={classes.root}>
                         <ExpansionPanel defaultExpanded className="expansionPanel">
                             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} className="expansionPanelSummary" >
                                 <div className={classes.column}>
@@ -413,28 +380,9 @@ class LiveChannelPage extends Component {
                                 </div>
                             </ExpansionPanelDetails>
                         </ExpansionPanel>
-                    </div> */}
+                    </div> 
 
-                    {channel.map(channel =>
-                        <div className="livechannel_sections">
-                            <div className="livechannel_card_header">
-                                <span> raju </span>
-                                {/* <span> Search </span> */}
-                            </div>
-                            <div className="livechannel_card_content">
-                                <div className="livechannel_content_section">
-                                    {channel.channelLinks.map(icon => (
-                                        <div className="channel_icon"
-                                        >
-                                            <img id="img" class="style-scope yt-img-shadow" alt="" width="48"
-                                                src={icon.name} onClick={() => this.handlVideoContent(icon.id, icon.channelHeading, icon.description)} />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </Card>
+                                    </Card>
                 {/* <Card className="livechannel_chat_card">
                     <div className="App chatpage_section"
                         onClick={e => this.Chatbot(e)}>

@@ -9,7 +9,8 @@ import TopBarProgress from "react-topbar-progress-indicator"
 // import play from "../../../assets/play.svg";
 import LiveChannels from './components/LiveChannels/LiveChannelsPage'
 import Navigation from "./components/Navigation/navigation";
-import Chips from "./components/Navigation/chip";
+import Language from "./components/Navigation/Language";
+import Category from "./components/Navigation/Category";
 import RightSidebar from "./components/RightSidebar/rightsidebar";
 import classNames from 'classnames';
 
@@ -80,55 +81,52 @@ class MainApp extends Component {
                                                 <a href="" >share <i class="far fa-share-square"></i></a>
                                                 </div>
                                             </div>
+                                            
                                              <div className="ln">
                                
-                                                </div>
+                                            </div>
                                 </div>
                                 <div className= "col-md-4 col-sm-12">
-                                      
+{/*                                       
                                 <div className="section0">
                                 <h4>Language</h4> 
                                 <div className="sec0cont">
-                                 <button ><i class="fas fa-check-circle"></i><span>All</span> </button>
-                                 <button className="dbtn"><i class="fas fa-check-circle"></i>Hindi </button>
-                                 <button ><i class="fas fa-check-circle"></i>English </button>
-                                 <br></br>
-                                 <button className="dbtn"><i class="fas fa-check-circle"></i>Tamil </button>
-                                 <button ><i class="fas fa-check-circle"></i>Bengali </button>
-                                 <button className="dbtn"><i class="fas fa-check-circle"></i>Marati </button>
+                                <Language/>
                                 </div>
                                 </div>
                                  <div className="section1">
                                 <h4>Category</h4>
                                 <div className="sec1cont">  
-                                <Chips/>   
+                                
+                                <Category/>   
                                 </div>
-                               </div>
+                               </div> */}
+                               <LiveChannels/>
                                  <div className="section2">
                                     <h4>Filtered</h4>
                                     <div className="categ">
                                      <img src={tv} alt="logo" />
-                                     <p>TV9 Telugu LIVE || Big News Big Debate : CM vs CS in AP <br></br><span>NEWS</span></p>
+                                     <p>TV9 Telugu LIVE || Big News Big <br/> Debate : CM vs CS in AP <br></br><span>NEWS</span></p>
                                      <i class="fas fa-pause"></i>  
                                     </div>
                                     <div className="categ ply">
                                      <img src={tv} alt="logo" />
-                                     <p>TV9 Telugu LIVE || Big News Big Debate : CM vs CS in AP <br></br><span>NEWS</span></p>
+                                     <p>TV9 Telugu LIVE || Big News Big <br/>  Debate : CM vs CS in AP <br></br><span>NEWS</span></p>
                                      <i class="fas fa-play"></i>  
                                     </div>
                                     <div className="categ">
                                      <img src={tv} alt="logo" />
-                                     <p>TV9 Telugu LIVE || Big News Big Debate : CM vs CS in AP <br></br><span>NEWS</span></p>
+                                     <p>TV9 Telugu LIVE || Big News Big <br/>  Debate : CM vs CS in AP <br></br><span>NEWS</span></p>
                                      <i class="fas fa-pause"></i>  
                                     </div>
                                     <div className="categ">
                                      <img src={tv} alt="logo" />
-                                     <p>TV9 Telugu LIVE || Big News Big Debate: CM vs CS in AP <br></br><span>NEWS</span></p>
+                                     <p>TV9 Telugu LIVE || Big News Big <br/>  Debate: CM vs CS in AP <br></br><span>NEWS</span></p>
                                      <i class="fas fa-pause"></i>  
                                     </div>
                                     <div className="categ">
                                      <img src={tv} alt="logo" />
-                                     <p>TV9 Telugu LIVE || Big News Big Debate: CM vs CS in AP <br></br><span>NEWS</span></p>
+                                     <p>TV9 Telugu LIVE || Big News Big  <br/> Debate: CM vs CS in AP <br></br><span>NEWS</span></p>
                                      <i class="fas fa-pause"></i>  
                                     </div>
                                 </div>

@@ -19,7 +19,7 @@ margin-right: 450px;
 /* liveChannel page*/
 .expansionPanelSummary{
     min-height: 0px !important;
-    height: 40px;
+    height: 60px;
 }
 .categoryChannel{
     margin-top: 3px;
@@ -27,9 +27,7 @@ margin-right: 450px;
 .expansionDetails{
     padding: 0px 5px !important;
 }
-.livechannel_page {
-    height: 80%;
-}
+    
 .livechannel_card {
     padding-top: 0;
     max-height: 50%;
@@ -93,9 +91,6 @@ margin-right: 450px;
 .livechannel_page .channel_icon {
     cursor: pointer;
 }
-.livechannel_sections {
-}
-
 
 
 /* chat */
@@ -164,21 +159,31 @@ input[type=search] {
   background-size:24px;
 }
 input[type=search]:focus {
-width: 554px;
+width: 600px;
 height: 47px;
 background: transparent;
-background: url('./icon/search-solid.svg') no-repeat right 9px center #162020;
+background: url('./icon/search-solid.svg') no-repeat right 9px center;
 display:block;    
 background-size:24px;
+outline:none;
+border:none;
+border-bottom:1px solid #162020;
 border-radius:5px;
 color:white;
+cursor: auto;
 }
+
+
 @media (min-width: 300px) and (max-width:1280px) 
 {
     input[type=search]:focus {
-        width: 240px;
+        width: 300px;
         height: 40px;
     }   
+    .navigaion_right{
+     
+        margin-right: 0px;
+        }
 }
 @media (min-width: 300px) and (max-width:550px) {
 .video_caption .btns a{
@@ -192,10 +197,7 @@ color:white;
     border-radius: 3px;
     margin-left: 5px;
 }
-input[type=search]:focus {
-    width: 140px;
-    height: 40px;
-} 
+
 }
 input[type="search"]::placeholder {
     font-family: Barlow;
@@ -220,7 +222,6 @@ color: #CBCBCB;
 
 .categ img{
     border-radius:50%;
-    border:1ps solid red;
     width:50px;
     height: 50px;
     margin:10px;
@@ -319,7 +320,7 @@ color: #CBCBCB;
     }
     div.section2::-webkit-scrollbar-thumb {
         border-radius: 10px;    
-          background-color:#F5F5F5;
+          background-color:red;
     }
 .section2 h4{
     padding:25px;
@@ -371,7 +372,6 @@ color: #FFFFFF;
     .section1 span{
         text-align: center;
         align-content: center;
-        padding-top: 100px;
     
     }
     .fa-check-circle{
@@ -391,4 +391,20 @@ color: #FFFFFF;
         }
     .section1 .dbtn{
     background: #323232;
+    }
+    .MuiChip-root-1
+    {
+        height: 28px !important;
+        color:white !important;
+        background: #323232 !important;
+    }
+    .MuiChip-avatar-13{
+      width:28px !important;
+        height: 28px !important;
+        background: #606060 !important;
+        color:white !important;
+    } 
+    .MuiChip-avatar-13:focus{
+        color:#2F89FC;
+        background:#2F89FC !important;
     }
