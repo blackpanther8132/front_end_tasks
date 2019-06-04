@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin' rel='stylesheet'
+        type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
+    <meta name="robots" content="nofollow" />
+    <meta name="referrer" content="no-referrer">
+    <link href="/favicon.ico?1556527656887" rel="shortcut icon" />
+    <style type="text/css">
+        body {
+            background: #F5F5F5;
+            color: #333;
+            font-family: 'Open Sans', Arial, serif;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+            display: block;
+            height: auto;
+            max-width: 50%;
+            margin: 0 auto;
+            max-height: 70px;
+        }
+
+        .page-container {
+            max-width: 400px;
+            width: 100%;
+            margin: 30px auto;
+        }
+
+        .iframe-container {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-top: 20px;
+            -webkit-box-shadow: 0 0 2px #ccc;
+            box-shadow: 0 0 2px #ccc;
+        }
+
+        .accounts-iframe {
+            width: 100%;
+            height: 290px; // 223px is very important when showing error messages
+            margin: 0;
+            border: none
+        }
+
+        .org-name {
+            margin-top: 20px;
+            font-weight: 100;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .message-section {
+            border-top: 1px solid #e5e5e5;
+            margin: 10px 0 25px;
+            padding-top: 10px;
+        }
+
+        .confirm-msg {
+            font-weight: 500;
+            margin-top: 20px
+        }
+
+        .login-msg {
+            font-size: 21px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .signincontainer {
+            padding: 10px;
+        }
+
+        .form-title {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .form {
+            display: block;
+            margin-top: 0em;
+        }
+
+        .form dl {
+            margin: 0 0 12px 0;
+        }
+
+        .form dd {
+            margin: 0;
+        }
+
+        input[type="text"] {
+            border: 1px solid #D6D6D6;
+            border-radius: 5px;
+            padding: 5px;
+            width: 300px;
+        }
+
+        .form input[type=password] {
+            font-size: 14px;
+        }
+
+        input[type="password"] {
+            border: 1px solid #D6D6D6;
+            border-radius: 5px;
+            padding: 5px;
+            width: 300px;
+        }
+
+        .btn {
+            font-family: "Open Sans";
+            border: 1px solid #A0A0A0;
+            border-radius: 3px;
+            padding: 4px 14px;
+            margin: 0px;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+
+        .btn.primary {
+            background: #60B044;
+            background: -webkit-linear-gradient(#8ADD6D, #60B044);
+            color: #FFFFFF;
+            text-shadow: 0 0 0 #FFF;
+        }
+
+        .big-btn {
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        @media(max-width :400px) {
+            input[type="text"] {
+                width: 200px;
+            }
+
+            input[type="password"] {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <div id="loginForm" class="iframe-container">
+            <div class="header">
+                <div style="margin:5px 0 15px">
+                    <img alt="organization's logo" title="organization's logo" src="assets/img/logo/Carigar_logo.svg" />
+                </div>
+                <div class="message-section">
+                    <h3 class="login-msg">Login to the portal</h3>
+                    <div style="font-size: 13px;color:#999">View your transactions with S R India Tooling Systems</div>
+                </div>
+            </div>
+            <section class="signinoutersection">
+                <section class="signincontainer">
+                    <div class="form-title">Sign In</div>
+                    <form action="//accounts.zohoportal.in/accounts/signin.ac" name="signinform" method="post"
+                        class="form" novalidate="true" autocomplete="off">
+                        <dl>
+                            <dd>
+                                <input type="text" name="username" placeholder="Email Address" autofocus="">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <input type="password" name="password" placeholder="Password">
+                            </dd>
+                        </dl>
+                        <dl class="za-captcha-container" style="display: none;">
+                            <dd>
+                                <input type="text" name="captcha" placeholder="Enter the word seen in the below image"
+                                    disabled=""> <img src="/accounts/images/spacer.gif" class="za-captcha">
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <label>
+                                    <input type="checkbox" name="sremember" value="true" style="vertical-align: top;">
+                                    Remember me
+                                </label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <input type="submit" class="btn big-btn primary" value="Sign In">
+                            </dd>
+                        </dl>
+                    </form>
+                </section>
+            </section>
+
+            <div style="margin-bottom: 20px">
+                <div style="padding:0 15px;">
+                    <div style="color:#666;margin-top:10px"><a href="/portal/carigartools/forgetpassword"
+                            style="padding: 10px 0;text-decoration:none;color:#08c">Forgot Password?</a></div>
+                    <div style="color: #999;font-size: 12px;line-height: normal;margin-top: 5px;">You will receive an
+                        e-mail with a link to reset your password.</div>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;font-size:12px;">
+                <div style="padding:0 15px;">
+                    <div style="color:#666;margin-top:10px"><a
+                            href="https&#x3a;&#x2f;&#x2f;accounts.zohoportal.in&#x2f;accounts&#x2f;signin&#x3f;_sh&#x3d;false&amp;hideidp&#x3d;true&amp;dcc&#x3d;true&amp;portal&#x3d;50000274733&amp;client_portal&#x3d;true&amp;servicename&#x3d;ZohoBooks&amp;serviceurl&#x3d;https&#x3a;&#x2f;&#x2f;books.zoho.in&#x2f;portal&#x2f;carigartools&#x2f;index&amp;service_language&#x3d;en"
+                            target="_blank" rel="noopener noreferrer"
+                            style="padding: 10px 0;text-decoration:none;color:#08c">Trouble signing in?</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top:15px;color:#666;border-top:1px solid #f0f0f0;margin-bottom:50px;text-align:center">Are you a
+        staff user? <a href="https://www.zoho.in/books/" style="padding: 10px 0;text-decoration:none;color:#08c">Login
+            here</a> </div>
+</body>
+
+</html>

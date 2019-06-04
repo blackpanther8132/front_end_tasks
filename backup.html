@@ -1,0 +1,58 @@
+function querySubmit() {
+	e.preventDefault();
+	var formMessages = $('.form__output');
+	var name = document.getElementById("contact_name").value;
+	var phone = document.getElementById("phone_number").value;
+	var email = document.getElementById("contact_email").value;
+	var message = document.getElementById("contact_message").value;
+	const body1 = { name, phone, message }
+	const body2 = { name, phone, email, message }
+	const body = email === "" ? body1 : body2;
+	$.ajax({
+		type: 'POST',
+		url: "http://13.127.34.90:9999/support",
+		async: false,
+		data: body
+	}).done(function (response) {
+		// Make sure that the formMessages div has the 'success' class.
+		console.log("response", response);
+		$(formMessages).removeClass('error');
+		$(formMessages).addClass('success');
+		// Set the message text.
+		$(formMessages).text(response.message);
+		//Clear the form.
+		$('#contact-form input,#contact-form textarea').val('');
+	}).fail(function (data) {
+		// Make sure that the formMessages div has the 'error' class.
+		$(formMessages).removeClass('success');
+		$(formMessages).addClass('error');
+		// Set the message text.
+		if (data.responseText !== '') {
+			$(formMessages).text(data.error.details[0].message);
+		} else {
+			$(formMessages).text('Oops! An error occured and your message could not be sent.');
+		}
+	});
+};
+
+
+var validations = {
+	email: [/^\d{10}$/, 'Please enter correct phone number ']
+};
+$(document).ready(function () {
+	// Check all the input fields of type email. This function will handle all the email addresses validations
+	$("input[type=number]").change(function () {
+		// Set the regular expression to validate the email 
+		validation = new RegExp(validations['email'][0]);
+		// validate the email value against the regular expression
+		if (!validation.test(this.value)) {
+			// If the validation fails then we show the custom error message
+			this.setCustomValidity(validations['email'][1]);
+			return false;
+		} else {
+			// This is really important. If the validation is successful you need to reset the custom error message
+			this.setCustomValidity('');
+		}
+	});
+})
+
