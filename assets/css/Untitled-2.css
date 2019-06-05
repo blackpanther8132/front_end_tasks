@@ -742,11 +742,10 @@ Quantity
   width: 100%;
 }
 .tab-content .tab-pane {
-  display: block;
+  /* display: block; */
   height: 0;
   max-width: 100%;
-  visibility: hidden;
-  overflow: hidden;
+
   opacity: 0;
 }
 .tab-content .tab-pane.active {
@@ -1332,7 +1331,12 @@ button,
 .pb--20 {
   padding-bottom: 2rem !important;
 }
-
+.pl--20{
+  padding-left: 20px !important;
+}
+.pr--20{
+  padding-right: 20px !important;
+}
 .pb--30 {
   padding-bottom: 3rem !important;
 }
@@ -2788,6 +2792,7 @@ button,
   border-right: 0;
   padding-right: 0;
 }
+.
 .header-top-3 {
   padding: 0;
   position: relative;
@@ -4562,19 +4567,36 @@ Vertical Menu
   background-position: center;
 }
 
-@media only screen and (min-width:500px) and (max-width:904px) {
+@media only screen and (min-width:1050px) and (max-width:1250px) {
+  .homepage-slider .single-slider {
+    height: 40rem;
+  }
+}
+@media only screen and (min-width:850px) and (max-width:1050px) {
   .homepage-slider .single-slider {
     height: 30rem;
   }
 }
+@media only screen and (min-width:650px) and (max-width:850px) {
+  .homepage-slider .single-slider {
+    height: 25rem;
+  }
+}
+@media only screen and (min-width:500px) and (max-width:650px) {
+  .homepage-slider .single-slider {
+    height: 20rem;
+  }
+}
 
 @media (max-width: 500px) {
+
 /* 
   .slick-slider{
     height:250px;
     } */
     .homepage-slider .single-slider {
-      height:25rem;
+
+      height:15rem;
     }
     .slick-list{
       height: 100%;
@@ -5435,6 +5457,38 @@ Nice Select
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
   background: url(../img/others/line.png) no-repeat center bottom;
+}
+.product-discription .row{
+  padding-bottom:20px;
+}
+.product-discription .title_dis .row{
+  display:block;
+}
+.product-discription .product{
+  margin-bottom: 20px;
+}
+@media (min-width:620px) and (max-width:767px){
+
+}
+.product-discription .title_dis{
+  padding: 20px;
+  padding-left: 10px !important;
+}
+.product-discription .title_dis h3{
+  align-content: center !important;
+  justify-content: center !important;
+  padding-bottom: 20px;
+  text-align: center !important;
+}
+.product-discription .product-content h5 {
+  margin-bottom: 1.5rem;
+  font-size: 15px;
+  background:none !important;
+}
+.product-discription .product-content{
+  padding:2rem;
+  padding-left: 1rem !important; 
+  justify-content: left;
 }
 .product-content h4 a {
   display: block;
@@ -8128,10 +8182,11 @@ User Dashboard tab
 
 .product-details-list {
   margin-bottom: 2rem;
+
 }
-.product-details-list li {
-  line-height: 1;
-}
+/* .product-details-list li {
+  line-height: 2;
+} */
 .product-details-list li:not(:last-child) {
   margin-bottom: 0.8rem;
   color: #ff7300;
