@@ -67,7 +67,7 @@ class MainApp extends Component {
                             <div className="row content">
                                 <div className="col-md-8 col-sm-12 ml-auto ">
                                     <div className="video embed-responsive embed-responsive-16by9">
-                                    <iframe width="100%" height="59px" src="https://www.youtube.com/embed/CaCuxGtp2xQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="59px" src="https://www.youtube.com/embed/f5BBJ4ySgpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                         <div className="video_caption">
                                                 <div className="title" >Business Analysis </div>

@@ -187,7 +187,7 @@ class LiveChannelPage extends Component {
                                             allLanguageChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    आ
+                                            <DoneIcon />
                                           </Avatar>
                                         }
                                         label="All"
@@ -201,7 +201,7 @@ class LiveChannelPage extends Component {
                                             hindiChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    आ
+                                            <DoneIcon />
                                           </Avatar>
                                         }
                                         label="Hindi"
@@ -215,7 +215,7 @@ class LiveChannelPage extends Component {
                                             englishChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    Aa
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="English"
@@ -229,7 +229,7 @@ class LiveChannelPage extends Component {
                                             teluguChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    ఒక
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Telugu"
@@ -243,7 +243,7 @@ class LiveChannelPage extends Component {
                                             tamilChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    ஒரு
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Tamil"
@@ -257,7 +257,7 @@ class LiveChannelPage extends Component {
                                             punjabiChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    ஒரு
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Punjabi"
@@ -271,7 +271,7 @@ class LiveChannelPage extends Component {
                                             rajasthaniChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    ஒரு
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Rajasthani"
@@ -285,7 +285,7 @@ class LiveChannelPage extends Component {
                                             haryanaviChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    ஒரு
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Haryanavi"
@@ -312,7 +312,7 @@ class LiveChannelPage extends Component {
                                             allCategoryChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    Al
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="All"
@@ -326,7 +326,7 @@ class LiveChannelPage extends Component {
                                             entertainmentChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    ET
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Entertainment"
@@ -340,7 +340,7 @@ class LiveChannelPage extends Component {
                                             gameChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    <FaceIcon />
+                                            <DoneIcon />
                                                 </Avatar>
                                         }
                                         label="Games"
@@ -354,7 +354,7 @@ class LiveChannelPage extends Component {
                                             movieChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    mt
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="Movie"
@@ -368,7 +368,7 @@ class LiveChannelPage extends Component {
                                             sportChipColor ? <Avatar>
                                                 <DoneIcon />
                                             </Avatar> : <Avatar>
-                                                    आ
+                                            <DoneIcon />
                                       </Avatar>
                                         }
                                         label="sports"

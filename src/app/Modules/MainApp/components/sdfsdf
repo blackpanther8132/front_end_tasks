@@ -7,31 +7,31 @@ const $ = window.$;
 class Navigation extends Component {
     state = {
         show: false,
-        log: true,
+        raj: true,
         ss: true
       };
  
   openSearch = () => {
     this.setState({ show: true });
-    this.setState({ log: true });
+    this.setState({ raj: true });
     this.setState({ ss: false });
   };
 
   closeSearch = () => {
     this.setState({ show: false });
-    this.setState({ log: true });
+    this.setState({ raj: true });
     this.setState({ ss: true });
   };
    
     render() {
         const { show } = this.state;
-        const { log } = this.state;
+        const { raj } = this.state;
         const { ss } = this.state;
         return (
             <div className="navigation-bar font-logo">
          
                 <div className="navigation_left">
-                {log ? (
+                {raj ? (
                     <div className="lg">
                        <img src={logo} alt="logo" />
                      </div>
@@ -40,13 +40,13 @@ class Navigation extends Component {
             )}
                 </div>
              
-                <div className="navigaion_right">
+                <div className="navigaion_right col-md-8 col-sm-12">
                         <div class="search-wrap" id="search-wrap">
             
                             {show ? (
                                 <div>
-                                <a href="#" onClick={() => this.closeSearch()} class="search-close js-search-close">
-                                    <span class="fa fa-times" />
+                                <a href="#" class="search-close js-search-close">
+                                    <span class="fa fa-times" onClick={() => this.closeSearch()} />
                                 </a>
                                 <form action="#" method="post">
                                     <input
@@ -63,8 +63,8 @@ class Navigation extends Component {
                         </div>  
                         {ss ? ( 
                         <div class="icons">
-                        <a href="#" class="icons-btn js-search-open" onClick={() => this.openSearch()}>
-                            <span class="fa fa-search"  />
+                        <a href="#" class="icons-btn js-search-open">
+                            <span class="fa fa-search" onClick={() => this.openSearch()} />
                         </a>
                         </div>
                         ) : (

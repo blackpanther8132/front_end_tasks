@@ -1,5 +1,6 @@
 .livechannel_page {
     height: 80%;
+    background:#121212 !important;
 }
 .livechannel_card {
     padding-top: 0;
@@ -9,10 +10,20 @@
     flex-direction: column;
     overflow-y: scroll !important;
     margin-bottom: 20px;
+    background:#121212 !important;
 }
 .livechannel_card_width {
     max-height: 100%;
     height: 100%;
+}
+.LiveChannelPage-root-1{
+    background:#121212 !important;
+}
+.MuiCard-root-10{
+    background:#121212 !important;
+}
+.MuiExpansionPanel-rounded-39:last-child{
+    background: #121212 !important;
 }
 .livechannel_card::-webkit-scrollbar {
     width: 6px;
@@ -55,6 +66,9 @@
 }
 .livechannel_page .channel_icon.channel_error {
     border: 2px solid red;
+}
+.MuiExpansionPanelDetails-root-106{
+    padding-bottom: 20px !important;
 }
 .livechannel_page .channel_icon .yt-img-shadow {
     border-radius: 50%;

@@ -94,7 +94,7 @@ body {
     width:100%;
 }
 .video_caption .title {
-    padding:30px;
+    padding:30px 30px 30px 0px;
     width:50%;
     font-family: Barlow;
     font-style: normal;
@@ -111,23 +111,24 @@ body {
     
 }
 .video_caption .btns a{
- text-decoration: none;
- padding:10px;
-color: #2F89FC;
-background: #080808;
-border: 1px solid #40514E;
-box-sizing: border-box;
-border-radius: 3px;
-margin-left: 10px;
-}
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: #2F89FC;
+    background: rgba(47, 137, 252, 0.16);
+    border:none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 31px;
+    margin-left: 5px;
+    margin-left: 10px;
+}   
 .sharebtn{
-    margin-top: 20px;
+    margin:20px 0px 30px 0px;
+
     text-align: left;
     align-items: center;
     display: flex;
     width:100%;
-    margin-left: 30px;
-    margin-bottom:30px;
 }
 .sharebtn .share a{
 text-transform: uppercase;
@@ -235,3 +236,4 @@ color: #6B6863;
         height: 65% !important;
     }
 }
+
