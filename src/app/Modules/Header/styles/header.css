@@ -1,0 +1,39 @@
+.sentinel_header {
+    padding-top: 50px;
+}
+.logo {
+    float: left;
+    max-width: 265px;
+    width: 100%;
+}
+.nav-menu.socialicon_list {
+    text-align: center;
+    float: right;
+    width: auto;
+    margin-top: 15px;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+}
+.socialicon_list li {
+    display: inline-block;
+    text-align: center;
+    line-height: 0;
+    margin: 5px;
+    cursor: pointer;
+    padding: 0;
+}
+.h_social_icons {
+    color: #3e5772;
+    width: 40px;
+    height: 30px;
+}
+.icon {
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.flag_name:hover .lang_name, .h_social_icons:hover, .social_icon_imgg:hover {
+    color: #c8c8c8;
+}
