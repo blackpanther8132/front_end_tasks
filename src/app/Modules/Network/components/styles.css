@@ -1,0 +1,38 @@
+.servicesCardsDiv {
+    min-width: 100%;
+    min-height: 200px;
+    /* display: flex;
+    overflow-x: scroll; */
+}
+.ServiceCard {
+    min-width: 33.333333%;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.Scrollbar {
+    height: 300px !important;
+}
+.Scrollbar > div {
+    position: absolute;
+    /* top: 0px; */
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* overflow: scroll; */
+    margin-right: -21px;
+    margin-bottom: -21px;
+    display: flex;
+}
+.servicesContainer:hover .Scrollbar > div  {
+    margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+    .Scrollbar {
+        height: 18vh !important;
+    }
+}
+@media (max-width: 767px) {
+    .Scrollbar {
+        height: 15vh !important;
+    }
+}

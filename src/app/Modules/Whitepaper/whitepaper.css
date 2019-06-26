@@ -1,0 +1,12 @@
+.lite_paper .container {
+    padding: 100px 0;
+}
+.lite_paper p {
+    margin-bottom: 20px;
+}
+.lite_paper .Button--grad {
+    color: #119FEC;
+    border: 2px solid;
+    border-radius: 4px;
+    margin-top: 20px;
+}

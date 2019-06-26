@@ -1,0 +1,383 @@
+/* Roadmap.css */
+.roadmap {
+    color: #000;
+}
+.roadmap_section1 {
+    background: #fff;
+    /* border-bottom: 1px solid #13a7f0; */
+    border-style: inset;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.sentinel_roadmap > p:first-child {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.sentinel_roadmap > p:last-child {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif; 
+}
+.Button.view_git_button {
+    background: #159DEE;
+    border: 2px solid #119FEC;
+    border-radius: 4px;
+    height: 47px;
+}
+.sign_up_field > .Button.view_git_button {
+    width: 40%;
+}
+.roadmap_steps {
+    background: #fff;
+}
+.roadmap_steps .header p {
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0;
+    margin-top: 48px;
+    font-family: 'Montserrat', sans-serif;
+}
+.step_box {
+    border: 1px solid #119fec2b;
+    box-shadow: 1px 1px 5px #119fec2b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.step_box.step_box_details {
+    margin-bottom: 0;
+    box-shadow: 0px -1px 1px #119fec2b;
+}
+/* .step_box:last-child {
+    margin-bottom: 0;
+} */
+.step_box > div.mile_stone {
+    display: inline-flex;
+    align-items: center;
+}
+.check_button {
+    width: 20px;
+    margin: 0 20px;
+}
+.check_button + p {
+    width: 65%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.view_details {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.view_details > p {
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+}
+.view_details > div {
+    width: 10px;
+    margin-bottom: 2px;
+}
+.step_box > div {
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+.step_box .date {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.step_box .network {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #119FEC;
+}
+.step_box .git {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #119FEC;
+}
+.step_box .n-a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.header {
+    text-align: left;
+}
+.step_box_details_show {
+    height: auto;
+    overflow: hidden;
+    transition: height 2s;
+    border: 1px solid #119fec2b;
+    border-top: none;
+    box-shadow: 1px 1px 5px #119fec2b;
+    /* height: 100px; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.step_box_details_show > p {
+    width: 50%;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.mb-150px {
+    margin-bottom: 150px;
+}
+.mailing_list {
+    background: linear-gradient(148.29deg, #00020C 1.38%, #0C165C 88.92%);
+    color: #fff;
+}
+.mailing_list > div {
+    padding: 60px 0;
+}
+.mailing_img,
+.mailing_list > div > p {
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.mailing_img + p {
+    font-size: 30px;
+    color: #Efb77c;
+    font-weight: 500;
+}
+.mailing_img + p + p {
+    font-size: 14px;
+    font-weight: normal;
+}
+.sign_up {
+    background: #fff;
+    height: 43px;
+    width: 90%;
+    border-radius: 3px;
+    margin: 0 !important;
+    margin-right: 20px !important;
+}
+.sign_up fieldset {
+    border: none;
+}
+.sign_up_field {
+    align-items: center;
+    display: inline-flex;
+    width: 600px;
+}
+.sign_up + a {
+    border: none;
+}
+.roadmap_lastSection {
+    background: linear-gradient(98.23deg, #2C8EB4 1.54%, #565EB2 98.98%);
+}
+.roadmap_lastSection > div {
+    padding: 40px 0;
+}
+.lastSection_checkMark {
+    display: inline-flex
+}
+.lastSection_checkMark > div {
+    width: 15px;
+    margin-right: 15px;
+}
+.roadmap_lastSection > div > div {
+    display: inline-flex;
+    padding: 0;
+    flex-direction: column;
+    color: #fff;
+    vertical-align: bottom;
+}
+.roadmap_lastSection .left > p {
+    font-size: 32px;
+    font-weight: 500;
+}
+.roadmap_lastSection .left a {
+    background: #fff;
+    border: none;
+}
+.TabsList{
+    margin-bottom:0;
+    color:#119FEC;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding-left: 0;
+}
+.TabsList li {
+    border-radius: 5px 8px 0 0;
+}
+.TabsList li  p {
+    /* margin: 10px 40px; */
+}
+.TabsList li a:hover {
+    text-decoration: none;
+    color:#119FEC;
+}
+.TabsList .react-tabs__tab--selected {
+    border-color:#C1EAFD;
+    background :rgba(238, 249, 255, 1) !important;
+    border: 1px solid #C1EAFD;
+    border-bottom: none;
+}
+.react-tabs__tab-panel--selected {
+    border: 1px solid #C1EAFD;
+}
+.TabsList .react-tabs__tab {
+    background : rgba(193, 234, 253, 1);
+    height: 35px;
+    padding: 6px 20px;
+}
+.TabsList .react-tabs__tab > a > p {
+    color: #119FEC;
+    font-size: 14px;
+}
+.TabsPanel {
+    background :rgba(238, 249, 255, 1);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-radius: 6px;
+}
+/* .Tabsdiv {
+    margin: 40px 12%;
+} */
+.systemButton {
+    display: grid;
+    background: none;
+    border: none;
+    margin: 10px 0;
+    padding: 30px;
+}
+.systemButton:hover {
+    background: #C1EAFD;
+    border: none;
+    border-radius: 4px;
+}
+.IconTitle {
+    color: #119FEC;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.IconListItemsPlatform {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 12%;
+    margin-bottom: 0;
+    list-style: none;
+}
+.IconListItemsPlatform .ImageSpanElement {
+    width: 110px;
+    background: #C1EAFD;
+    color: #119FEC;
+    border-radius: 4px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.IconListItemsPlatform .ImageClass {
+  width: 30px;
+  height: auto;
+  color: #119FEC;
+}
+.padding_60px {
+    padding: 60px 0;
+}
+.roadmap_lastSection > .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media (max-width: 1199px) {
+    .IconListItemsPlatform {
+        padding: 40px 70px;
+    }
+    .systemButton.last_button {
+        padding-right: 0;
+    }
+    .systemButton.first_button {
+        padding-left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .systemButton {
+        padding: 10px;
+    }
+    .IconListItemsPlatform .ImageSpanElement {
+        width: 90px;
+    }
+}
+@media (max-width: 767px) {
+    .systemButton {
+        padding: 0;
+    }
+    .IconListItemsPlatform {
+        padding: 40px;
+    }
+    .IconListItemsPlatform .ImageSpanElement {
+        width: 85px;
+    }
+    .roadmap_lastSection > .container {
+        flex-direction: column;
+    }
+    .roadmap_lastSection > div > div.left {
+        text-align: center !important;
+        margin-bottom: 50px;
+    }
+    .lastSection_checkMark {
+        justify-content: center;
+    }
+    .view_git_button_div {
+        display: flex;
+        justify-content: center;
+    }
+    .sentinel_roadmap > p {
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .sign_up_field {
+        width: inherit;
+    }
+}
+@media (max-width: 576px) {
+    .IconListItemsPlatform {
+        display: block;
+    }
+    .IconListItemsPlatform > li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+@media (max-width: 484px) {
+    .check_button + p {
+        font-size: 12px;
+    }
+    .view_details > p,
+    .step_box .date,
+    .step_box .network,
+    .step_box .git {
+        font-size: 10px;
+    }
+}
+@media (max-width: 380px) {
+    .TabsList .react-tabs__tab {
+        padding: 5px 12px;
+    }
+}

@@ -1,0 +1,448 @@
+
+
+ .HeaderMenu .listClass .active 
+ {
+     /* font-weight: bold !important; */
+     /* background :#/119FEC; */
+     color: #119FEC !important;
+ }
+ .HeaderMenu .listClass span:hover
+ {
+     /* font-weight: bold; */
+     /* background :#/119FEC; */
+     color: #119FEC;
+ }
+
+.sentinel .status_bar {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 7px;
+    text-align: left;
+    top: calc(50% - 37px/2 - 2473px);
+    background: #020939;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.sentinel .Header {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.sentinel .Navigation {
+    margin-top: 40px;
+}
+.sentinel .status_bar p{
+  margin: 0;
+  font-size: 12px;
+}
+.sentinel .Navigation__body {
+    margin-top: 4px;
+}
+.sentinel .HeaderMenu>ul {
+    margin-bottom: 0;
+}
+.sentinel .HeaderMenu>ul>li {
+    display: inline-block;
+    padding: 0 12px;
+}
+.sentinel .HeaderMenu>ul a:not(.Button) {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+} 
+.sentinel .Link {
+    cursor: pointer;
+}
+.logo {
+    float: left;
+    max-width: 150px;
+    width: 100%;
+}
+.nav-menu.socialicon_list {
+    text-align: center;
+    float: right;
+    width: auto;
+    margin-top: 15px;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+}
+.socialicon_list li {
+    display: inline-block;
+    text-align: center;
+    line-height: 0;
+    margin: 5px;
+    cursor: pointer;
+    padding: 0;
+}
+.h_social_icons {
+    color: #159CEF;
+    width: 25px;
+    height: 30px;
+}
+.icon {
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+.flag_name:hover .lang_name, .h_social_icons:hover, .social_icon_imgg:hover {
+    color: #0070b5;
+}
+
+
+
+
+
+
+
+
+
+
+/* social media icons with drop down */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+.dropdown-content a {
+    font-family: 'Open Sans', sans-serif;
+}
+.dropdown-content a:hover {
+    text-decoration: none; 
+    color: #111a42;   
+}
+.lang_name {
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 6px;
+    margin: auto;
+   
+}
+/* .dropdown.lang_change {
+    top: -8px;
+}  */
+.dropdown.lang_change .dropdown-content {
+    margin-top: 17px;
+}
+.dropdown.lang_change .dropdown-content a {
+    padding: 10px 20px;
+}
+.flag {
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.dropdown-content {
+    opacity: 0;
+    padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    visibility: hidden;
+    position: absolute;
+    background-color: #424242e3;
+    min-width: 150px;
+    transition: all .5s ease-in-out;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(255,255,255,0.2);
+    box-shadow: 0px 1px 2px 1px rgba(255,255,255,0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.sentinel .socialicon_list li.flag_li {
+    margin: 0 11px;
+}
+.line_nav {
+    width: 1px;
+    height: 15px;
+    background: #3e5772;
+    position: absolute;
+    top: 0;
+    bottom: 3px;
+    margin: auto; 
+}
+
+.flag_name {
+    width: 14px;
+    margin: auto;
+    position: relative;
+    height: 10px;
+}
+.flag_name img {
+    position: absolute;
+    top: -14px;
+    width: 27px;
+    height: 15px;
+}
+.right_arrow {
+    position: absolute;
+    top: -10px;
+    margin-left: -5.5px;
+    z-index: -2;
+    right: 10px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(0deg);
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 11px 7px;
+    border-color: transparent transparent #424242e3 transparent;
+}
+.flag_li {
+    margin-left:-10px;
+    margin-top: 16px;
+}
+.social_padding {
+    padding-left: 30px !important;
+}
+.header_navlinks {
+    display: flex;
+    align-items: center;
+}
+.sentinel_logo {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .header_navlinks {
+        align-items: unset;
+    }
+    .social_padding {
+        padding-left: 20px !important;
+    }
+    .header_navlinks span {
+        font-size: 10px;
+    }
+    .header_navlinks svg {
+        width: 18px;
+    }
+    .line_nav {
+        height: 15px;
+    }
+    .lang_name {
+        font-size:9px;
+        margin-top: -10px;
+        margin-bottom: 6px;
+        bottom: -2px
+    }
+    .flag_name {
+        display: flex;
+        width: 14px;
+    }
+    .flag_name img {
+        top:-15px;
+        width: 14px;
+    }
+    .flag_li {
+        margin-left: -10px;
+        margin-top: auto;
+    }
+    .sentinel_logo {
+        margin-top: 4px;
+        align-items: end;
+    }
+}
+@media (max-width: 767px) {
+    .sentinel .status_bar p {
+        font-size: 10px;
+    }
+    /* .container {
+        max-width: 600px !important;
+    } */
+}
+.mobile_nav {
+    display: none;
+}
+@media (max-width: 767px) {
+    .mobile_nav {
+        margin: 0 15px;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .burger_icon {
+        width: 30px;
+        color: #fff;
+    }
+    .main_nav_bar {
+        display: none;
+    }
+    .sentinel_logo {
+        width: 30% !important;
+        margin: 0 15px;
+    }
+    .justify_nav {
+        justify-content: space-between;
+    }
+    .Navigation__body {
+        margin-top: -10px !important;
+    }
+    .header_navlinks {
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        padding: 30px;
+        text-align: left;
+    }
+    .sentinel .HeaderMenu > ul > li {
+        padding: 10px 12px;
+    }
+    .header_navlinks span {
+        font-size: 15px;
+    }
+}
+@media (max-width: 378px) {
+    .header_navlinks {
+        padding: 9px;
+    }
+}
+.status_content{
+    display:inline;
+    margin-top:3px;
+    float:left;
+}
+.status_social{
+    margin-top: 3px;
+    display:inline;
+    float:right;
+}
+.status_heading{
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 18px;
+text-align: center;
+color: #606AAF;
+}
+.status_dot{
+    height: 3px;
+    width: 3px;
+    background-color:#606AAF;
+    border-radius: 50%;
+   
+    margin:0px 3px 2px 3px;
+    display: inline-block;
+}
+.status_vul{
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 15px;
+text-align: center;
+color: #EE5310;
+}
+.status_data{
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 15px;
+text-align: center;
+color: #C1EAFD;
+
+}
+.social_icons_header {
+    display: flex;
+    list-style: none;
+}
+.status_social ul{
+    margin-bottom: 0px !important;
+}
+.social_icons_header > li {
+    margin-left: 20px;
+    color:#fff;
+}
+
+.social_icons_header svg {
+    margin-right: 20px;
+    color:#fff;
+}
+.social_icons_header .social_icon_imgg{
+    width:15px;
+    height: 15px;
+    margin:0px !important;
+}
+.social_icons_header li:first-child{
+    display: inline-block;
+    background:#181F52;
+    margin-top: -4px;
+    padding:6px 7px 6px 6px;
+    border-radius: 50%;
+}
+.navmore{
+    position: relative;
+    display: inline-block;
+
+}
+.hovercard{
+   position: absolute;
+    left: -150px;
+   z-index: 1;
+    display: none;
+    width:600px;
+    height: auto;
+    
+}
+.navmore:hover .hovercard{
+
+     border-radius: 5px;
+   display: block;
+   columns: #f2f2f2;
+   background:white;
+}
+.hovercard li img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.hovercard li{
+    margin-left: 20px;
+}
+.hovercard li h3{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+text-align: left;
+line-height: 145.69%;
+color: #1F1F1F;
+}
+.hovercard li p{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+margin-left: 10px;
+line-height:5px;
+/* or 20px */
+color: rgba(17, 51, 83, 0.6);
+}
+.hovercard ul:first-child{
+    padding: 20px 0px 10px 30px;
+}
+.hovercard ul:last-child{
+    padding: 10px 0px 20px 30px;
+}
+.hovercard li:first-child
+{
+    margin-right: 20px;
+}

@@ -1,0 +1,246 @@
+
+  #wrapper
+  {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+  }
+  .scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#style-8::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+#style-8::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-8::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+
+
+
+
+
+.network_firstsection .c_white {
+    color:black;
+}
+.network_firstsection .para_des {
+    color:black;
+}
+.network_firstsection .bottom_line_head {
+    color: black;
+}
+.network_firstsection .head_color_1 {
+    color: black;
+}
+.network_firstsection .bottom_line_head:after {
+    background: none;
+}
+/* .servicesCardsDiv {
+    min-width: 100%;
+    min-height: 200px;
+    display: flex;
+    overflow-x: scroll;
+} */
+/* .ServiceCard {
+    min-width: 33.333333%;
+    margin: 5px;
+} */
+
+/* second section */
+
+.second_section {
+    background: rgba(0, 2, 12, 1);
+    padding: 100px 20px;
+}
+.second_section_header {
+    color: #EFB77C;
+
+}
+.LeftContentSecondSection{
+    color: #fff;
+    text-align: left;
+}
+.section_section_container1 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.containerImg {
+    padding-right: 0;
+}
+.containerImg img {
+    width: 100%;
+}
+.systemsectionright {
+    margin-top: 50px;
+    padding-left: 10%;
+}
+.systemsectionleft {
+    margin-top: 50px;
+    /* padding-right: 10%; */
+}
+.LeftContentSecondSection p {
+    margin-top: 20px;
+}
+.CheckStatsButton {
+    color: white !important;
+    border: 1px solid #119FEC  !important;
+    padding:10px 30px !important;
+    margin-top:20px !important;
+}
+.bottomContainer {
+    padding-left: 6% !important;
+}
+
+
+
+/* 3rd sectiion */
+
+
+.third_section {
+    /* background: rgba(0, 2, 12, 1); */
+    padding: 100px 50px;
+}
+.third_section_header {
+    /* color: #EFB77C; */
+
+}
+.validatorContent {
+    text-align: left;
+
+}
+
+.section_section_container1 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.frstcontainerSecondsection {
+    margin-top: 50px;
+}
+.LeftContentSecondSection p {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.containerBox {
+    
+   
+}
+.Head_Content_Class {
+    width: 88%;
+}
+.IMgBox {
+    width: 400px;
+    height: 300px;
+    background: #EFFAFF;
+    border: 2px solid rgba(36, 102, 201, 0.14);
+}
+
+/*  mailing section */
+
+.mailing_section {
+    background: rgba(0, 2, 12, 1);
+    padding: 60px 0;
+}
+.Mailing_Main h3 {
+    color: #EFB77C;
+}
+.Mailing_Main p {
+    color: white;
+}
+.EmailField {
+    margin-top:0 !important;
+    width:500px;
+}
+.EmailField input {
+    background: #fff;
+    border-radius: 4px;
+}
+.EmailField label {
+    padding-top: 12px;
+    transform: translate(15px, 8px) scale(1);
+}
+.TextfiledButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.SignupMailButton {
+    background: #119FEC !important;
+    color: white !important;
+    height: 55px;
+    margin-left:20px !important;
+    width: 130px;
+}
+
+@media (max-width: 767px) {
+    .Head_Content_Class h4 {
+        font-size: 22px;
+    }
+    .Head_Content_Class p {
+        font-size: 12px;
+    }
+    .LeftContentSecondSection h4 {
+        font-size: 22px;
+    }
+    .LeftContentSecondSection p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    .systemsectionright {
+        padding-left: 0;
+    }
+    .systemsectionleft,
+    .third_section > div:last-child > .frstcontainerSecondsection {
+        flex-direction: column-reverse
+    }
+    .LeftContentSecondSection {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .LeftContentSecondSection p {
+        width: 100%;
+    }
+    .IMgBox {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .Head_Content_Class {
+        width: 100%;
+        text-align: center;
+    }
+    .img_resources {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .margin-left_xs_10 > div {
+        margin-left: 10px;
+    }
+}

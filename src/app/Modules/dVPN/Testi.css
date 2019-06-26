@@ -1,0 +1,182 @@
+.CardMainDiv {
+    background: rgba(17, 61, 124, 0.13);
+    color: white;
+    display: flex;
+    padding: 20px 10px;
+    border-radius: 4px;
+    width: 90% !important;
+    /* display: flex !important;
+    justify-content: space-around; */
+    margin-left: 30px;
+}
+
+.CircleMainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.CircleDiv {
+  width: 80px;
+  height: 80px;
+    border-radius: 50%;
+    background: #1B2046;
+    border: 3px solid #3B73DF;
+    /* margin-top: 10%; */
+    margin: 20px;
+    margin-left: -35px;
+    /* display: flow-root; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.CardContent {
+text-align: left
+}
+.TestiHead {
+    color:#EFB77C;
+    font-weight: bold;
+}
+.CardContent p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.CardContent h4 {
+    text-align: left;
+    margin-bottom: 0;
+}
+.CardContent span {
+    font-size: 12px;
+
+}
+.testiMain {
+    padding: 60px;
+    margin: 40px 0;
+    margin-bottom: 40px;
+    color: #333;
+    background: #091148;
+  }
+  .testiMain .slick-arrow {
+      margin-left:-50px;
+      margin-right: -50px;
+  }
+  .testimonialDiv {
+    padding: 40px 20%;
+  }
+
+  h3 {
+    /* background: blue; */
+    color: #fff;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+  }
+  .variable-width .slick-slide p {
+    background: blue;
+    height: 100px;
+    color: #fff;
+    margin: 5px;
+    line-height: 100px;
+    text-align: center;
+  }
+  .center .slick-center h3 {
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(1.08);
+  }
+  .center h3 {
+    opacity: 0.8;
+    transition: all 300ms ease;
+  }
+  .content {
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+  }
+  .slick-slide .image {
+    padding: 10px;
+  }
+  .slick-slide img {
+    border: 5px solid #fff;
+    display: block;
+    margin: auto;
+  }
+  .slick-slide img.slick-loading {
+    border: 0;
+  }
+  .slick-slider {
+    margin: 30px auto 50px;
+  }
+  .slick-dots {
+    margin-left: 0;
+  }
+  .slick-thumb {
+    bottom: -45px;
+  }
+  .slick-thumb li {
+    width: 60px;
+    height: 45px;
+  }
+  .slick-thumb li img {
+    filter: grayscale(100%);
+  }
+  .slick-thumb li.slick-active img {
+    filter: grayscale(0%);
+  }
+
+
+
+
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 24px;
+    }
+    .center {
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+    .center .slick-center h3 {
+      color: #e67e22;
+      opacity: 1;
+      transform: scale(1);
+    }
+    .center h3 {
+      opacity: 0.8;
+      transform: scale(0.95);
+      transition: all 300ms ease;
+    }
+  }
+  .slick-vertical .slick-slide {
+    height: 180px;
+  }
+  .slick-arrow {
+    background-color: grey;
+    /* color: black; */
+  }
+  .slick-arrow:hover {
+    background-color: grey;
+  }
+  /* .slick-prev {
+    z-index: 100;
+    left: 20px !important;
+  }
+  .slick-next {
+    z-index: 100;
+    right: 20px !important;
+  } */
+@media (max-width: 991px) {
+  .testimonialDiv {
+    padding: 40px 10%;
+  }
+}
+@media (max-width: 575px) {
+  .testiMain .slick-arrow {
+    margin: 0;
+  }
+  .testiMain {
+    padding: 50px 0;
+  }
+}

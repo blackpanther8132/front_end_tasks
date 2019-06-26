@@ -1,0 +1,952 @@
+.DevicesMain {
+  background: #fff;
+}
+.DevicesHeadIcon {
+    background: #EEF9FF;
+    display: flex;
+    justify-content: space-around;
+    /* padding-top:100px; */
+    /* background: #000; */
+}
+ul {
+  list-style-type: none;
+}
+.HeadMainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.Content {
+    /* color : #EFB77C; */
+}
+.HeadMainDiv p {
+    color:#119FEC;
+    /* text-align: initial; */
+}
+.IconListItems {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 12%;
+    margin-bottom: 0;
+}
+.ImageClass {
+    /* background: #04285d; */
+    /* padding: 20px 30px; */
+    width: 20px;
+    height: auto;
+    color:#119FEC;
+}
+.ImageSpanElement {
+  width: 80px;
+  background: #C1EAFD;
+  height: 60px;
+  padding: 10px;
+  color: #119FEC;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .systemButton {
+    display: grid;
+    background: none;
+    border: none;
+    margin: 10px 0;
+    padding: 30px;
+}
+.systemButton:hover {
+    background: #C1EAFD;
+    border: none;
+    border-radius: 4px;
+} */
+
+.IconTitle {
+    color: #119FEC;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Next COmponent */
+.AboutVPNMainDiv {
+    padding: 40px 12%;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+.VPNUL {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.VPNListItems {
+    width: 450px;
+}
+
+.VPNCard {
+    height: 100%;
+}
+.VPNDivdata {
+    text-align: initial;
+    /* background: #113D7C; */
+    padding: 40px 30px;
+    height: 300px;
+}
+.VPNDivdata h3 {
+    /* color: #EFB77C; */
+    font-size: 18px;
+    text-align: left;
+    margin-left:0;
+    padding-left:0;
+}
+.VPNcontent {
+    /* color: #fff; */
+}
+.VPNGraphDiv {
+    height: 30%;
+    background: transparent;
+}
+
+/* dVPN Netwrok */
+
+.dVPNNetworkComponent {
+    /* margin: 80px 0; */
+}
+
+.dVPNNetwrokInsideComponent {
+    
+}  
+.dVPNNetwrokInsideComponent h3 {
+    /* color: #EFB77C; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0;
+}
+.dVPNNetworkcontent {
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+     margin: 20px 0;
+    /*font-weight: 500; */
+}
+.dVPNNetworkcontent p {
+    width: 40%;
+}
+
+
+
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.carousel_slide img {
+    max-width: 100%;
+  }
+.carousel_history {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel_history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 3px;
+}
+.carousel_history li {
+    width: 15%;
+    box-sizing: border-box;
+    height: inherit;
+    position: relative;
+}
+.carousel_history:not(:last-of-type) {
+    margin-right: 5%;
+  }
+.carousel_history button {
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.5);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+.carousel_history button.active {
+    background-color: rgba(255,255,255, 0.95);
+  }
+.carousel {
+    position: relative;
+    width: 50vw;
+    height: 33vw;
+    overflow: hidden;
+    box-shadow: -1px 2px 10px 2px rgba(0,0,0,0.5);
+    }
+    
+    
+    .carousel_control {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      height: 100%;
+      display: block;
+      background-color: rgba(0,0,0,0.1);
+      border: 0;
+      padding: 0 5px;
+      width: 10%;
+      overflow: hidden;
+      transition: background-color 300ms ease;
+      cursor: pointer;
+    }
+      .carousel_control span {
+        display: inline-block;
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+        box-sizing: border-box;
+        opacity: 0.65;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        transition: opacity 300ms ease;
+      }
+      
+      .carousel_control:hover {
+        background-color: rgba(0,0,0,0.2);
+      }
+        .carousel_control:hover span {
+          opacity: 0.95;
+        }
+      
+    
+        .carousel_control__prev {
+        left: 0;
+        padding-left: 12px;
+        }
+        .carousel_control__prev span {
+            transform: rotate(45deg);
+          }
+      
+      
+      .carousel_control__next {
+        right: 0;
+        padding-right: 12px;
+      }
+        .carousel_control__next span {
+           transform: rotate(-135deg);
+         }
+      
+  
+   
+  .leave {
+    transform: translateX(0);
+  }
+  
+  .enter-active.enter-next, .enter-active.enter-prev {
+    transform: translateX(0);
+    transition: transform 500ms linear;
+  }
+  
+  .enter-next {
+    transform: translateX(100%);
+  }
+  
+  .enter-prev {
+    transform: translateX(-100%);
+    transition: transform 500ms linear;
+  }
+  
+  .leave-active-next {
+    transform: translateX(-100%);
+    transition: transform 500ms linear;;
+  }
+  
+  .leave.leave-active-prev {
+    transform: translateX(100%);
+    transition: transform 500ms linear;
+  }
+  
+  
+  /* body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%, #b1b1b1 20%, #a79b9f 40%, #d78745 120%);
+  } */
+  .appCarousel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* stats */
+  .StatsMainDiv {
+      /* background: #e5e5e5; */
+      padding: 20px;
+  }
+.NetworkStatsButton {
+  border: 2px solid #119FEC !important;
+  color: #119FEC !important; 
+  /* padding:5px 30px !important; */
+}
+
+  .StatsGraphContent {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 12%;
+  }
+  .StatsHead {
+      color: black;
+      margin-bottom: 40px;
+  }
+  .StatsDivInside {
+    background: #EEF9FF;
+    border: 1px solid #C8EAFC;
+    width: 48%;
+  }
+  .GraphDiv {
+    background: #2C8EB4;
+    /* width: 500px; */
+    height: 250px;
+    border-radius: 4px;
+    margin: 20px;
+    opacity: 0.3;
+  }
+  .StatsStatus {
+    border-top: 2px solid #119FEC;
+    border-left:none;
+    /* opacity: 0.4; */
+    display: flex;
+  }
+  .LeftLine {
+    border-right: 1px solid #119FEC;
+  }
+  .SimpleCard {
+    width: 50%;
+    display: grid;
+    height: 100px;
+    /* border-left: 1px solid #119FEC; */
+    padding: 20px;
+  }
+  .RepoButton {
+    border: 2px solid #119FEC !important;
+    color: #119FEC !important; 
+  }
+  
+  .StatsCount {
+    color: #119FEC;
+    font-weight: bold;
+  }
+  /* Code Repo */
+  .NetworkStats {
+      margin: 40px 0;
+  }
+  .CodeRepoClass {
+    background: #fff;
+  }
+  .CodeRepoHead {
+
+  }
+  .CardImaageClass {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12%;
+    align-items: center;
+  }
+  .CardsClass {
+    display: block;
+    width: 50%;
+  }
+  .CardDiv {
+    width: 50%;
+    display: inline-block;
+    padding: 75px;
+  }
+  .ImgClass {
+width: 50%;
+  }
+  .ImgClass img {
+    width: 100%;
+  }
+  .CardName{
+
+  }
+  .CardCount {
+    display: block;
+    color: #119FEC;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  /* Protocol class */
+
+  .SupportedProtocols {
+    background: #091148;
+    margin: 100px 0;
+    padding: 100px 0;
+    height: 700px;
+  }
+  .ProtocolsHead {
+color: #e9b77b;
+  }
+  .ProtocolPara {
+    color: #fff;
+    /* width: 400px; */
+    margin: 0 30%;
+  }
+  .ProtocolsNetwork {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 25%;
+  }
+  .ProtocolDetails {
+/* width: 10%; */
+width: 40%;
+  }
+  .ProtocolsList {
+    display: flex;
+    justify-content: left;
+    padding: 12px 0;
+  }
+  .Protocols {
+    width: 25px;
+    height: 25px;
+    background: rgba(32, 40, 87, 1);
+    border-radius: 50%;
+  }
+  .ProtocolsName {
+    color: #fff;
+    margin-left: 20px;
+  }
+  .ProtocolNameComingSoon {
+      font-size: 10px;
+      color: #e9b77b;
+  }
+
+  .NetworkDetails {
+    width: 60%;
+  }
+.HeadExpansionPanel, .ExpansionPanel svg {
+    color: #EFB77C !important;
+}
+.ExpansionPanel {
+  background: rgba(12, 30, 88, 1) !important;
+ margin-bottom:10px;
+}
+.ExpansionPanel p{
+  color: #fff ;
+}
+  /* Platforms */
+
+  /* .PlatformsMainDiv {
+    background: #fff;
+    padding: 40px 0;
+  }
+  .PlatformHead {
+    font-weight: bold;
+  } */
+  .PlatformPara {
+    /* margin : 20px 35%; */
+  }
+  /* .PlatformsDiv {
+
+  }
+  .PlatformTabs {
+    
+    margin: 40px 12%;
+    
+    border-top:none;
+  }
+  .PlatformTabs ul {
+border-bottom: none;
+  }
+  .PlatformTabs li {
+    border-color:#C1EAFD;
+    border:-9px;
+    background :rgba(238, 249, 255, 1);
+    color:#119FEC;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 30px;
+    margin-right:0px;
+    border-bottom:none;
+      } */
+
+  /* .TabsList{
+    margin-bottom:0;
+    border-bottom: 1px solid #C1EAFD;
+    background :rgba(238, 249, 255, 1);
+    color:#119FEC;
+    padding-left: 0;
+  }
+  .TabsList li {
+    padding: 5px 30px;
+    border-radius: 5px 8px 0 0;
+  }
+  .TabsList li a {
+    color:#119FEC;
+  }
+  .TabsList li a:hover {
+    text-decoration: none;
+    color:#119FEC;
+  }
+  .TabsList .react-tabs__tab--selected {
+    border-color:#C1EAFD;
+    background :rgba(238, 249, 255, 1) !important;
+  }
+  .TabsList .react-tabs__tab {
+    background : rgba(193, 234, 253, 1) 
+  }
+  .TabsPanel {
+    background :rgba(238, 249, 255, 1);
+    margin-bottom: -3px;
+    padding-bottom: 0;
+    border-radius: 6px;
+  }
+  .Tabsdiv {
+    margin: 40px 25%;
+  }
+
+
+  .IconListItemsPlatform {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 12%;
+    margin-bottom: 0;
+} */
+/* .IconListItemsPlatform .ImageSpanElement {
+  width: 100px;
+  background: #C1EAFD;
+  height: auto;
+  padding: 20px;
+  color: #119FEC;
+  border-radius: 4px;
+}
+.IconListItemsPlatform .ImageClass {
+
+  width: 30px;
+  height: auto;
+  color: #119FEC;
+} */
+
+/* browser border */
+.BrowserBorder {
+  background :rgba(44, 142, 180, 1);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 15%;
+}
+.ListItemsBrowser {
+
+}
+.BrowserBorderHead h1 {
+  margin-bottom: 40px;
+  color: #fff;
+}
+.BrowserBorderHead button {
+  padding: 12px 40px;
+  float: left;
+  background: #fff;
+  color: #119FEC;
+  font-size: 18px;
+}
+
+.ListItemsEach {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.ListNames {
+  display: flex;
+    justify-content: left;
+    padding: 12px 0;
+}
+
+.ImageGalleryDiv  .image-gallery {
+  margin:0 20%;
+}
+.ImageGalleryDiv .image-gallery-swipe {
+  height: 500px;
+}
+.ImageGalleryDiv .image-gallery-slides {
+  height: 500px
+}
+
+/* Node Network */
+.NodeNetworkMain {
+  background: rgba(0, 2, 12, 1);
+  padding: 90px 0;
+  display: block;
+}
+.NodeNetworkMain h2 {
+  color: #EFB77C;
+  padding-bottom: 70px;
+  display: block;
+}
+.LiveNodesButton {
+  border: 2px solid rgba(17, 159, 236, 1) !important;
+  border-radius: 4px;
+  color: #fff !important;
+  padding: 10px 40px !important;
+  display: block !important;
+}
+.ButtonDiv {
+  display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+#carousel {
+  position: absolute;
+  height: 200px;
+  width: 810px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #d7d7d7;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #228291;
+  line-height: 30px;
+  margin-top: 85px;
+  z-index: 1000;
+}
+
+.arrow-right {
+  left: 780px;
+}
+
+.item {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
+}
+
+/* 150px: 150px;$level2-height
+110px: 110px;$level2-width
+180px: 180px;$level1-height
+130px: 130px;$level1-width
+200px: 200px;$level0-height
+150px: 150px;$level0-width
+
+650px: 650px;$level-2-left
+500px: 500px;
+330px: 330px;$level0-left
+180px: 180px;$level1-left
+50px: 50px;$level2-left */
+
+
+.level-2 {
+  height: 150px;
+  width: 110px;
+  line-height: 150px;
+  background-color: #228291;
+  left: 650px;
+  margin-top: 25px;
+}
+
+.level-1 {
+  height: 180px;
+  width: 130px;
+  line-height: 180px;
+  background-color: #6796E5;
+  left: 500px;
+  margin-top: 10px;
+}
+
+.level0 {
+  height: 200px;
+  width: 150px;
+  line-height: 200px;
+  background-color: #4EC9E1;
+  left: 330px;
+}
+
+.level1 {
+  height: 180px;
+  width: 130px;
+  line-height: 180px;
+  background-color: #6796E5;
+  margin-top: 10px;
+  left: 180px;
+}
+
+.level2 {
+  height: 150px;
+  width: 110px;
+  line-height: 150px;
+  background-color: #228291;
+  margin-top: 25px;
+  left: 50px;
+}
+
+.left-enter {
+  opacity: 0;
+  left: 50px - 110px;
+  height: 150px - 30px;
+  width: 110px - 20px;
+  line-height: 150px - 30;
+  margin-top: 40px;
+}
+
+.left-enter.left-enter-active {
+  opacity: 1;
+  left: 50px;
+  height: 150px;
+  width: 110px;
+  line-height: 150px;
+  margin-top: 25px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.left-leave {
+  opacity: 1;
+  left: 650px;
+  height: 150px;
+  width: 110px;
+  line-height: 150px;
+  margin-top: 25px;
+}
+
+.left-leave.left-leave-active {
+  left: 650px + 110px + 20px;
+  opacity: 0;
+  height: 150px - 30px;
+  line-height: 120px;
+  margin-top: 40px;
+  width: 110px - 20px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.right-enter {
+  opacity: 0;
+  left: 650px + 110px;
+  height: 150px - 30px;
+  width: 110px - 20px;
+  line-height: 150px - 30;
+  margin-top: 40px;
+}
+
+.right-enter.right-enter-active {
+  left: 650px;
+  opacity: 1;
+  height: 150px;
+  margin-top: 25px;
+  line-height: 150px;
+  width: 110px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.right-leave {
+  left: 50px;
+  height: 150px;
+  opacity: 1;
+  margin-top: 25px;
+  line-height: 150px;
+  width: 110px;
+}
+
+.right-leave.right-leave-active {
+  left: 50px - 110px;
+  opacity: 0;
+  height: 150px - 30px;
+  width: 110px - 20px;
+  line-height: 150px - 30;
+  margin-top: 40px;
+  transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+}
+
+.noselect {
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none;  
+          user-select: none;
+}
+.CarouselMainClass {
+  position: relative;
+  margin: 200px 0;
+}
+.carousel.slide {
+  width: 41vw;
+  height: auto;
+  margin: auto;
+}
+.carousel-inner {
+  background: #000000ba;
+}
+.testimonial_2 {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .ProtocolsNetwork {
+    padding: 40px 15%;
+  }
+  .IconListItems {
+    display: block;
+  }
+  .IconListItems > li {
+    width: 15%;
+    display: inline-block;
+  }
+  .IconListItems > li:first-child {
+    width: 100%;
+  }
+  .dVPNNetworkcontent p {
+    width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .ProtocolsNetwork {
+    padding: 40px 12%;
+  }
+  .NetworkDetails {
+    width: 50%;
+  }
+  .ProtocolPara {
+    margin: 0 20%;
+  }
+  .map_image {
+    width: 100%;
+  }
+  .StatsCount {
+    font-weight: 400;
+  }
+  .StatusName {
+    font-size: 12px;
+  }
+}
+@media (max-width: 789px) {
+  .CardImaageClass {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .CardsClass {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .CardDiv {
+    padding: 0;
+  }
+  .CodeRepoClass {
+    margin-top: 100px;
+  }
+  .ImgClass {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .ProtocolsNetwork {
+    padding: 40px 10%;
+  }
+  .ProtocolPara {
+    margin: 0 10%;
+  }
+  .padding_bottom_sm_0 {
+    padding-bottom: 0 !important;
+  }
+  .IconListItems {
+    padding: 30px 0;
+  }
+  .VPNUL {
+    flex-direction: column;
+    align-items: center;
+  }
+  .VPNDivdata {
+    height: auto;
+  }
+  .VPNListItems {
+    width: 100%;
+  }
+  .testimonial_1 {
+    display: none;
+  }
+  .testimonial_2 {
+    display: block;
+  }
+  .StatsGraphContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .StatsDivInside {
+    width: 100%;
+  }
+  .StatsDivInside:first-child {
+    margin-bottom: 50px;
+  }
+  .sentinel .first_section h1,
+  .sentinel .first_section p,
+  .sentinel .first_section p + div {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .ProtocolsNetwork {
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .SupportedProtocols {
+    height: auto;
+  }
+  .ProtocolDetails {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .NetworkDetails {
+    width: 100%;
+  }
+  .IconListItems > li {
+    width: 26%;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .dVPNNetworkcontent p {
+    width: 80%;
+  }
+  .StatsCount {
+    font-size: 12px;
+  }
+}

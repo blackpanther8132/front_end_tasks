@@ -1,0 +1,205 @@
+.sentinel_footer {
+    background: #0f1a43;
+    position: relative;
+    padding: 80px 0 50px;
+}
+.nav-menu.social_icon_list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin: auto;
+    border-bottom: 1px solid #3f4b59;
+    border-top: 1px solid #3f4b59;
+}
+.social_icon_list li {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin: 25px 15px 15px;
+    cursor: pointer;
+    padding: 0;
+}
+.social_icon_imgg {
+    width: 25px;
+    height: 25px;
+    color: #3e5772;
+    display: block;
+    margin: 0 15px;
+}
+
+  #left, #middle {
+    width: 100%;
+}
+.copy_right_sentinel {
+    position: relative;
+    padding: 20px 0;
+    color: #a9a9a9;
+}
+#left, #middle, #right {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+}
+.footer_header {
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer_download_text {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #7C89A3;
+}
+.footer_background {
+    background: url('../../../../assets/dotted-world-map-vector-1ftrans.png');
+    margin-top: 27px;
+}
+.apple_app_store {
+    color: #fff;
+}
+.apple_app_store p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.apple_app_store p:first-child {
+    font-size: 9px;
+}
+.apple_logo {
+    width: 23px;
+    margin-right: 10px;
+}
+.mobile_apps > div > div {
+    display: flex;
+    align-items: center;
+    padding: 9px 20px;
+}
+.mobile_apps > div {
+    background: #2D3145;
+    width: 165px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.footer_list {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+.footer_list > ul {
+    list-style: none;
+    padding: 0;
+}
+.footer_list > ul > li {
+    margin: 30px 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer_list > ul > li:first-child {
+    color: #4D5462;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.social_icons_footer {
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.social_icons_footer > li {
+    margin: 0;
+    color: #2D3145;
+}
+.social_icons_footer svg {
+    margin: 0;
+    margin-right: 20px;
+}
+.footer_select_field {
+    margin: 0 !important;
+    background: #2D3145;
+    border-radius: 5px;
+    border: none;
+    width: 152px;
+    /* height: 35px; */
+}
+.footer_select_field .MuiOutlinedInput-input-33{
+    padding:8px 14px !important; 
+}
+.footer_select_field > div > div > div,
+.footer_select_field > div > div > svg {
+    color: #fff;
+    font-weight: normal;
+}
+.footer_select_field > div > div > div {
+    font-size: 12px;
+}
+.footer_select_field > div > fieldset {
+    border: none;
+}
+.copy_right_text {
+    color: #fff;
+    text-align: left;
+
+    margin-top: 20px;
+    color: #7C89A3;
+}
+.divider{
+    background: #0D2854;
+
+}
+.copy_right_text > div > p {
+    font-size: 14px;
+    margin-bottom: 21px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+.copy_right_text > p {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 767px) {
+    .footer_list > ul:nth-child(2),
+    .footer_list > ul:nth-child(3) {
+        width: 130px;
+    }
+}
+@media (max-width: 575px) {
+    .footer_select_field {
+        width: 130px;
+    }
+    .footer_list > ul {
+        width: 50% !important;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .footer_list {
+        display: block;
+    }
+    .footer_header,
+    .footer_download_text {
+        text-align: left;
+    }
+    .mobile_apps {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 400px) {
+    .mobile_apps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile_apps > div {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .mobile_apps > div:first-child {
+        margin-bottom: 20px;
+    }
+}
