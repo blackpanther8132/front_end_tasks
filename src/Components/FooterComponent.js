@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Navbar, NavbarBrand, Jumbtron} from "reactstrap";
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';    
 
 function Footer(props) {
     return(
