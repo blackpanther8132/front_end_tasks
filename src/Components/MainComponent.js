@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import {Card,  CardBody, CardImg, CardImgOverlay, CardTitle, CardText} from "reactstrap"
 import DishDetail  from "./DishdetailComponent";
-import Header from "./HeaderComponent"
-import Footer from "./FooterComponent"
+
 class Menu extends Component{
     constructor(props){
         super(props);
@@ -32,7 +31,7 @@ class Menu extends Component{
         });
         return(
             <React.Fragment>
-            <Header />
+            
             <div className="container">
                 <div className="row">
                 {menu}
@@ -40,7 +39,7 @@ class Menu extends Component{
               
                  <DishDetail  selectDish={this.state.selectDish} />
              </div>
-            <Footer />
+           
             </React.Fragment>
         );
 
