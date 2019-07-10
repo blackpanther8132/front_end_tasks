@@ -1,0 +1,14 @@
+.analog img{
+    max-width: 50% !important;
+}
+.quote p{
+    font-style: italic !important;
+    font-size:25px !important;
+}
+.quote h5{
+    font-style: italic !important;
+    text-align: right !important;
+}
+.products_header h2{
+    padding-bottom: 2.42857143em !important;
+}
