@@ -1,7 +1,15 @@
 .analog img{
     max-width: 50% !important;
 }
+.section_quote{
+
+background:#CFFDF8;
+padding-bottom:3.42857143em !important;
+}
 .quote p{
+    color:#212529;
+    line-height: 45px;
+    padding-top:3.42857143em;
     font-style: italic !important;
     font-size:25px !important;
 }
@@ -10,5 +18,73 @@
     text-align: right !important;
 }
 .products_header h2{
-    padding-bottom: 2.42857143em !important;
+    padding-bottom: 2.42857143em;
+}
+.feature-2 .feature_img{
+    width: 20%;
+    float: left;
+}
+.feature_img1 img{
+    width:95px !important;
+}
+.feature-2 .feature_img img{
+    width:70px;
+    height:70px;
+}
+
+.section_product .feature__body p{
+    margin-bottom:0px !important;
+
+}
+
+@media (max-width: 990px){
+    .feature-2 .feature_img img{
+        margin-left: 30%;
+        
+    }
+    .feature-2 .feature__body, .feature-2 .feature_img{
+        float: none;
+        width: 100%;
+
+    }
+
+
+}
+@media (min-width:993px){
+    .feature-2 .feature__body_first{
+        width:70% !important;
+        
+    } 
+    .feature-2 .feature_img1{
+        width:26% !important;
+    }
+}
+.analog img{
+    width:100px;
+    height: 100px;
+}
+.analog .color--primary{
+    color:#65C0BA !important;
+} 
+.contact-header h2{
+    margin-bottom: 7.31rem;
+}
+.feature__body p a{
+    text-decoration: none;
+    font-weight:700;
+    color:#4a90e2;
+    font-size: 0.85714286em;
+
+}
+
+/* Products page styles */
+.product_heading, .industries_heading{
+    padding:30px 0px 0px 0px;
+}
+
+@media (max-width:575px){
+    .feature-2 .feature_img img{
+        margin-left: 40%;
+        
+    }
 }
