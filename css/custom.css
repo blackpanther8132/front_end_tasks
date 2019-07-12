@@ -88,3 +88,28 @@ padding-bottom:3.42857143em !important;
         
     }
 }
+
+.product_first_heading{
+    color:#F76262;
+    font-size: 1.1em
+}
+.products img{
+    width: 200px;
+}
+.contact_submit .btn{
+    background-color:#65C0BA;
+    border:none;
+}
+.feature-1 .lead{
+    font-size: 1.2em !important;
+    font-weight:300 !important;
+}
+.tabs li.active .tab__title span{
+    color:#216583;
+}
+.quote .first_quote{
+    padding-top: 7em !important;
+}
+.products .association_text{
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
