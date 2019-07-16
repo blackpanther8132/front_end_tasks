@@ -1,5 +1,7 @@
 import React, {Component} from "react";
-import {Card,  CardBody, CardImg, CardImgOverlay, CardTitle, CardText} from "reactstrap"
+import { Card, CardImg, CardImgOverlay,
+    CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import DishDetail  from "./DishdetailComponent";
 
 class Menu extends Component{
@@ -10,7 +12,7 @@ class Menu extends Component{
         }
       }
       onDishSelect(dish){
-          this.setState({selectDish:dish})
+          this.setState({selectDish:dish});
       }
      
     render(){
@@ -33,11 +35,21 @@ class Menu extends Component{
             <React.Fragment>
             
             <div className="container">
+            <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>Menu</BreadcrumbItem>
+                    </Breadcrumb>
+                
+                    <div className="col-12">
+                        <h3>Menu</h3>
+                        <hr />
+                    </div>                
+                </div>
                 <div className="row">
                 {menu}
-                </div>
-              
-                 <DishDetail  selectDish={this.state.selectDish} />
+                </div>          
+                 <DishDetail selectDish={this.state.selectDish} />
              </div>
            
             </React.Fragment>
