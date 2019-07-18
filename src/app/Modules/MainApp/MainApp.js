@@ -182,12 +182,12 @@ class MainApp extends Component {
                                             >
                                         
                                             <DialogContent>
-                                                <input type="text" onChange={this.onChange} rows={2} cols={10} value={videoId} />
+                                                <input type="text" onChange={this.onChange} rows={2} cols={10} value={'https://www.youtube.com/embed/' + videoId} />
                                                 <CopyToClipboard
 
                                                         onCopy={this.onCopy}
 
-                                                        text={this.state.value}>
+                                                        text={'https://youtu.be/' + videoId}>
 
                                                         <button >Copy</button>
                                                         </CopyToClipboard>       
