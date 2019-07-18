@@ -17,8 +17,9 @@ class Navigation extends Component {
     };
     render() {
           return (
-          <div className="container-fluid">
+          
           <div className="navigation-bar-main font-logo">
+         
             <div className="navigation-bar font-logo">
          
                 <div className="navigation_left">
@@ -52,7 +53,7 @@ class Navigation extends Component {
                </div>   
             </div>
           </div>
-          </div>
+          
         );
     }
  

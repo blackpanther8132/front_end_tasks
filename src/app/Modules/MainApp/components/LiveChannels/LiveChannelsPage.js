@@ -14,6 +14,7 @@ import { Launcher } from 'react-chat-window';
 import CONSTANTS from "../../../../../constants";
 import CardHeader from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
+import $ from "jquery";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 import {
@@ -32,7 +33,8 @@ import {
 import { Card, ExpansionPanel, ExpansionPanelSummary, Typography, Chip, ExpansionPanelDetails, Avatar } from "@material-ui/core"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import DoneIcon from '@material-ui/icons/Done';
-import FaceIcon from '@material-ui/icons/Face';
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 
 
 const styles = theme => ({
@@ -79,6 +81,7 @@ class LiveChannelPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            anchorEl: null,
             loading: false,
             channel: CONSTANTS.channel,
             value: false,
@@ -104,6 +107,13 @@ class LiveChannelPage extends Component {
         }
     }
 
+    handleClick = event => {
+        this.setState({ anchorEl: event.currentTarget });
+      };
+    
+      handleClose = () => {
+        this.setState({ anchorEl: null });
+      };
     componentWillMount = () => {
         this.setState({ loading: true })
     }
@@ -176,15 +186,17 @@ class LiveChannelPage extends Component {
         }
     }
     handleSelectList = (name) => {
-        if (name === "Language") {
+        if (name === "Category") {
             this.setState({ selectList: true });
         }
-        if (name === "Category") {
+        if (name === "Language") {
             this.setState({ selectList: false });
         }
     }
 
     render() {
+        const { anchorEl } = this.state;
+        const open = Boolean(anchorEl);
         const { channelIcons, cardschannel, channel, value, hindiChipColor,
             englishChipColor,
             teluguChipColor,
@@ -209,7 +221,7 @@ class LiveChannelPage extends Component {
         // console.log("video data", videoData);
         console.log('value', liveData);
 
-        const languageSelected = [allLanguageChipColor ? 1 : 0, englishChipColor ? 1 : 0, hindiChipColor ? 1 : 0, teluguChipColor ? 1 : 0];
+        const languageSelected = [allLanguageChipColor ? 1 : 0, englishChipColor ? 1 : 0, hindiChipColor ? 1 : 0, teluguChipColor ? 1 : 0, tamilChipColor ? 1 : 0, punjabiChipColor ? 1 : 0, rajasthaniChipColor ? 1 : 0, haryanaviChipColor? 1 :0];
         const categorySelected = [allCategoryChipColor ? 1 : 0, entertainmentChipColor ? 1 : 0, gameChipColor ? 1 : 0, movieChipColor ? 1 : 0, sportChipColor ? 1 : 0, newsChipColor ? 1 : 0];
         function add(accumulator, a) {
             return accumulator + a;
@@ -218,7 +230,7 @@ class LiveChannelPage extends Component {
         const categorySum = categorySelected.reduce(add, 0);
 
         return (
-            <div className="livechannel_page">
+            <div className="livechannel_page">      
                 <div className="clearfix"></div>
                 {/* <Navbar color="light" light expand="md">
                     <NavbarBrand href="/">reactstrap</NavbarBrand>
@@ -311,123 +323,15 @@ class LiveChannelPage extends Component {
                         </div>  */}
 
                   
-                        <div className="top">
-                            <div className={selectList ? "live_right_card_top active" : "live_right_card_top inactive"} onClick={() => this.handleSelectList("Language")}>Language({languageSum === 2 ? "All" : languageSum})</div>
-                            <div className={selectList ? "live_right_card_top inactive" : "live_right_card_top active"} onClick={() => this.handleSelectList("Category")}>Categories({categorySum === 2 ? "All" : categorySum})</div>
-                        </div>
-                        {selectList ? <div className={classes.root}>
-                            <div className="">
-                                <Chip
-                                    avatar={
-                                        allLanguageChipColor ? <Avatar>
-                                            <DoneIcon
-                                            />
-                                        </Avatar> : <Avatar>
-                                                Aa
-                                          </Avatar>
-                                    }
-                                    label="All"
-                                    className={classNames(classes.chip, allLanguageChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
-                                    onClick={() => this.chipClick("allLanguageChipColor", "lang")}
-                                    clickable
-                                />
-                                 <Chip
-                                    avatar={
-                                        englishChipColor ? <Avatar>
-                                            <DoneIcon />
-                                        </Avatar> : <Avatar>
-                                                Aa
-                                      </Avatar>
-                                    }
-                                    label="English"
-                                    className={classNames(classes.chip, englishChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
-                                    onClick={() => this.chipClick("englishChipColor")}
-                                    clickable
-                                />
-                              {/* }  <Chip
-                                    avatar={
-                                        hindiChipColor ? <Avatar>
-                                            <DoneIcon />
-                                        </Avatar> : <Avatar>
-                                                आ
-                                          </Avatar>
-                                    }
-                                    label="Hindi"
-                                    className={classNames(classes.chip, hindiChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
-                                    onClick={() => this.chipClick("hindiChipColor")}
-                                    clickable
-                                /> */}
-                                <Chip
-                                    avatar={
-                                        teluguChipColor ? <Avatar>
-                                            <DoneIcon />
-                                        </Avatar> : <Avatar>
-                                                ఒక
-                                      </Avatar>
-                                    }
-                                    label="Telugu"
-                                    className={classNames(classes.chip, teluguChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
-                                    onClick={() => this.chipClick("teluguChipColor", "lang")}
+                        <div className="top">                                 
+                        <div className={selectList ? "live_right_card_top active" : "live_right_card_top inactive"} onClick={() => this.handleSelectList("Category")}>Categories({categorySum === 8 ? "All" : categorySum})</div>
 
-                                    clickable
-                                />
-                                {/* <Chip
-                                        avatar={
-                                            tamilChipColor ? <Avatar>
-                                                <DoneIcon />
-                                            </Avatar> : <Avatar>
-                                                    ஒரு
-                                      </Avatar>
-                                        }
-                                        label="Tamil"
-                                        className={classes.chip}
-                                        onClick={() => this.chipClick("tamilChipColor")}
-                                                                                clickable
-                                    />
-                                    <Chip
-                                        avatar={
-                                            punjabiChipColor ? <Avatar>
-                                                <DoneIcon />
-                                            </Avatar> : <Avatar>
-                                                    ஒரு
-                                      </Avatar>
-                                        }
-                                        label="Punjabi"
-                                        className={classes.chip}
-                                        onClick={() => this.chipClick("punjabiChipColor")}
-                                        }
-                                        clickable
-                                    />
-                                    <Chip
-                                        avatar={
-                                            rajasthaniChipColor ? <Avatar>
-                                                <DoneIcon />
-                                            </Avatar> : <Avatar>
-                                                    ஒரு
-                                      </Avatar>
-                                        }
-                                        label="Rajasthani"
-                                        className={classes.chip}
-                                        onClick={() => this.chipClick("rajasthaniChipColor")}
-                                        clickable
-                                    />
-                                    <Chip
-                                        avatar={
-                                            haryanaviChipColor ? <Avatar>
-                                                <DoneIcon />
-                                            </Avatar> : <Avatar>
-                                                    ஒரு
-                                      </Avatar>
-                                        }
-                                        label="Haryanavi"
-                                        className={classes.chip}
-                                        onClick={() => this.chipClick("haryanaviChipColor")}
-                                        clickable
-                                    /> */}
-                            </div>
-                        </div> :
-                            <div className={classNames(classes.root, "categoryChannel")}>
-                                <div className="">
+                        <div className={selectList ? "live_right_card_top inactive" : "live_right_card_top active"} onClick={() => this.handleSelectList("Language")}>Language({languageSum === 8 ? "All" : languageSum})</div>
+                             
+                        </div>
+                        <div className="chips">
+                        {selectList ? <div className={classNames(classes.root, "categoryChannel")}>
+                        <div className="">
                                     <Chip
                                         avatar={
                                             allCategoryChipColor ? <Avatar>
@@ -507,7 +411,122 @@ class LiveChannelPage extends Component {
                                         clickable
                                     /> */}
                                 </div>
-                            </div>}
+                            </div> :
+                            <div className={classNames(classes.root)}>
+                               
+                   
+                   
+                            <div className="">
+                                <Chip
+                                    avatar={
+                                        allLanguageChipColor ? <Avatar>
+                                            <DoneIcon
+                                            />
+                                        </Avatar> : <Avatar>
+                                                Aa
+                                          </Avatar>
+                                    }
+                                    label="All"
+                                    className={classNames(classes.chip, allLanguageChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                    onClick={() => this.chipClick("allLanguageChipColor", "lang")}
+                                    clickable
+                                />
+                                 <Chip
+                                    avatar={
+                                        englishChipColor ? <Avatar>
+                                            <DoneIcon />
+                                        </Avatar> : <Avatar>
+                                                Aa
+                                      </Avatar>
+                                    }
+                                    label="English"
+                                    className={classNames(classes.chip, englishChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                    onClick={() => this.chipClick("englishChipColor", "lang")}
+                                    clickable
+                                />
+                                <Chip
+                                    avatar={
+                                        hindiChipColor ? <Avatar>
+                                            <DoneIcon />
+                                        </Avatar> : <Avatar>
+                                                आ
+                                          </Avatar>
+                                    }
+                                    label="Hindi"
+                                    className={classNames(classes.chip, hindiChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                    onClick={() => this.chipClick("hindiChipColor", "lang")}
+                                    clickable
+                                />
+                                <Chip
+                                    avatar={
+                                        teluguChipColor ? <Avatar>
+                                            <DoneIcon />
+                                        </Avatar> : <Avatar>
+                                                ఒక
+                                      </Avatar>
+                                    }
+                                    label="Telugu"
+                                    className={classNames(classes.chip, teluguChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                    onClick={() => this.chipClick("teluguChipColor", "lang")}
+
+                                    clickable
+                                />
+                                <Chip
+                                        avatar={
+                                            tamilChipColor ? <Avatar>
+                                                <DoneIcon />
+                                            </Avatar> : <Avatar>
+                                                    ஒரு
+                                      </Avatar>
+                                        }
+                                        label="Tamil"
+                                        className={classNames(classes.chip, tamilChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                        onClick={() => this.chipClick("tamilChipColor" , "lang")}
+                                   
+                                    />
+                                    <Chip
+                                        avatar={
+                                            punjabiChipColor ? <Avatar>
+                                                <DoneIcon />
+                                            </Avatar> : <Avatar>
+                                            <DoneIcon />
+                                      </Avatar>
+                                        }
+                                        label="Punjabi"
+                                        className={classNames(classes.chip, punjabiChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                        onClick={() => this.chipClick("punjabiChipColor")}
+                                        
+                                  
+                                    />
+                                    <Chip
+                                        avatar={
+                                            rajasthaniChipColor ? <Avatar>
+                                                <DoneIcon />
+                                            </Avatar> : <Avatar>
+                                            <DoneIcon />
+                                      </Avatar>
+                                        }
+                                        label="Rajasthani"
+                                        className={classNames(classes.chip, rajasthaniChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                        onClick={() => this.chipClick("rajasthaniChipColor")}
+                                        clickable
+                                    />
+                                    <Chip
+                                        avatar={
+                                            haryanaviChipColor ? <Avatar>
+                                                <DoneIcon />
+                                            </Avatar> : <Avatar>
+                                            <DoneIcon />
+                                      </Avatar>
+                                        }
+                                        label="Haryanavi"
+                                        className={classNames(classes.chip, haryanaviChipColor ? "chipClickedcolor" : "chipUnclickedColor")}
+                                        onClick={() => this.chipClick("haryanaviChipColor")}
+                                        clickable
+                                    />
+                            </div>
+                        </div> }
+                    </div>
                     </div>
                                 
                     <div className="live_filtered">
@@ -529,9 +548,25 @@ class LiveChannelPage extends Component {
                                 </div>
                                 <div className="live_card_videoPlay playbutton">
                             
-                            <IconButton aria-label="Settings">
+                            <IconButton  aria-label="More"
+                                aria-controls="long-menu"
+                                aria-haspopup="true"
+                                /* onClick={this.handleClick}  */
+                                >
                             <MoreVertIcon />
                             </IconButton>
+                            {/* <Menu
+                            id="long-menu"
+                            anchorEl={anchorEl}
+                            keepMounted
+                            open={open}
+                            onClose={this.handleClose}
+                            >
+                            <MenuItem onClick={this.handleClose}>Download</MenuItem>
+                            <MenuItem onClick={this.handleClose}>Share</MenuItem>
+                    
+                            ))}
+                            </Menu> */}
                               </div>
                             </div>
                            
@@ -576,4 +611,15 @@ class LiveChannelPage extends Component {
         );
     }
 }
+$(function(){ 
+    $('.shareButton').click(function(){
+         $(".share_icons").toggle('slide');
+    });
+    $(".section_filtered").css({'height':($(".video_fixed").height()+'px')});
+    
+    $(".section_filtered").height($(".video_fixed").height());
+    
+    var highestCol = Math.max($('.section_filtered').height(),$('.video_fixed').height());
+    $('.section_filtered').height(highestCol);
+    });
 export default withStyles(styles)(LiveChannelPage);

@@ -3,10 +3,11 @@
 .navigation-bar-main{
     display: flex;
     align-items: center; 
-    height: 72px;
-   background: linear-gradient(180deg, #0C0C0D 119%, #000000 100%);
+    background: #121212;
+   /* background: linear-gradient(180deg, #0C0C0D 119%, #000000 100%); */
     width: 100%;
     position: fixed;
+    padding-left: 20px;
     z-index: 10;
     text-align: left;
   
@@ -15,21 +16,18 @@
     display: flex;
     align-items: center; 
     height: 72px;
-    background:linear-gradient(180deg, #0C0C0D 119%, #000000 100%);
+    /* background:linear-gradient(180deg, #0C0C0D 119%, #000000 100%); */
     width: 66%;
-    position: fixed;
     z-index: 10;
     text-align: left;
   
 }
 
-.font-logo{
-  
-}
 /* changed */
 .navigation_left{
 /* width:  30%; */
-margin-right:25px;
+margin-right:10px;
+margin-left: 30px;
 }
 .navigation_right{
 width : 100%;
@@ -40,6 +38,7 @@ width : 100%;
     width: 300px;
     padding-top: 8px;
     padding-bottom: 8px;
+    
 }
 .navigation_text_search input::placeholder{
     color:   #CBCBCB;
@@ -63,12 +62,18 @@ background-color: #162020;
 .expansionDetails{
     padding: 0px 5px !important;
 }
-.livechannel_page {
+
+/* .livechannel_page {
     height: 100%;
+} */
+.video-list{
+    overflow: hidden;
+
 }
+
 .livechannel_card {
     padding-top: 0;
-    max-height: 50%;
+    
     height: 0%;
     display: flex;
     flex-direction: column;
@@ -76,8 +81,7 @@ background-color: #162020;
     background : black !important;
 }
 .livechannel_card_width {
-    max-height: 100%;
-    height: 100%;
+    height: 50%;
 }
 .livechannel_card::-webkit-scrollbar {
     width: 6px;
@@ -95,7 +99,6 @@ background-color: #162020;
     margin: 10px 0 0px 25px; 
     
 }
-
 .livechannel_content_section {
     width: 100%;
 }
@@ -120,11 +123,11 @@ background-color: #162020;
     border: 2px solid red;
 }
 .yt-img-shadow {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 70px;
     margin-right: 10px;
-    border-radius: 50%;
-    border: 2px solid #fff; 
+  
+    border: 0px solid #fff; 
 }
 @media (min-width:1000px){
     .video_name span:first-child{
@@ -320,6 +323,32 @@ input[type="color"]:focus,
   box-shadow:none;
   outline:0px none;
 }
+@media (min-width:501px){
+    .search-wrap .form-control{
+        float:right;
+        width: 80%;
+        background: url('../../../../../assets/img/button/search_icon_white.png') no-repeat right 9px center transparent;
+        padding:20px 20px 20px 20px;
+        background-color:#1E1E1E;;
+        border: 0px !important;
+       color:#A3A3A3 !important;
+       border-radius: 0px !important;
+        font-size: 15px;   
+    }
+.search-wrap input:focus{
+    display: block;
+    width: 80%;
+    height: calc(1.5em + .75rem + 2px);
+    background: url('../../../../../assets/img/button/search_icon_blue.png') no-repeat right 9px center transparent;
+     background-color: #162020;
+    padding-right:40px;
+   
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+}
+@media (max-width:500px){
 .search-wrap .form-control{
     width:30px;
     height: 30px;
@@ -330,10 +359,8 @@ input[type="color"]:focus,
     border-radius: 50%;
     border: 0px !important;
  
-    color:#fff !important;
-    font-size: 1rem;
-   
-   
+    color:#A3A3A3 !important;
+    font-size: 15px;   
 }
 
 .search-wrap input:focus{
@@ -349,18 +376,19 @@ input[type="color"]:focus,
     
 }
 
+}
 .search-wrap input::placeholder, .search-wrap input:focus::placeholder{
     font-family: Barlow;
 font-style: normal;
 font-weight: normal;
-font-size: 21px;
+font-size: 17px;
 line-height: 25px;
 
-color: #CBCBCB;
+color: #A3A3A3;
 }
 
 .search-wrap{
-    margin:0px 40px 20px 0px;
+    margin:0px 20px 20px 0px;
   
 }
 .search-close {
@@ -407,7 +435,9 @@ color: #DADADA;
 
 }
 .video_name{
+    padding-bottom: 5px;
     flex:1 1 auto;
+    box-shadow: 0px 15px 10px -17px #111;
 }
 .playbutton{
     margin-top:-10px;
@@ -431,7 +461,7 @@ color: #DADADA;
 }
 .section_filtered{
     background: #000000;
-    height:50%;
+    height:100%;
     overflow: hidden;
     overflow-y:scroll;
 }   
@@ -456,4 +486,16 @@ color: #DADADA;
 }
 .select-wrapper span.caret {
     color: #FFFFFF !important;
+}
+.show_more, .show_less{
+    margin:10px 0px 10px 0px;
+    text-decoration: none;
+}
+.show_more, .show_less:hover{
+    text-decoration: none;
+}
+.chips{
+    padding-left:10px;
+    text-align: left;   
+    margin:10px 0px 10px 0px;
 }

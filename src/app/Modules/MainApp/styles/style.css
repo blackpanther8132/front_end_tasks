@@ -19,13 +19,23 @@ body {
       display: none;
   }
 /* DIN-PRO-Bold Font Family */
+@media (max-width:1600px){
 .container-fluid {
     padding-left: 30px !important;
     padding-right: 30px !important;
     max-width : 100%;
 }
+}
+@media (min-width:1601px){
+    .container-fluid {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+        max-width : 100%;
+    } 
+}
+
 .freeflix .live_channel_dispaly {
-    padding-top: 15px;
+    padding-top: 30px;
 }
 .freeflix .channel_icon {
     float: left;
@@ -110,6 +120,7 @@ font-style: normal;
 font-weight: normal;
 padding-bottom: 10px;
 font-size: 16px;
+text-align: justify;    
 line-height: 21px;
 color: #A3A3A3;
 }
@@ -223,6 +234,148 @@ color: #A3A3A3;
         max-width: 66.666667% !important;
     }
 }
-.embed-responsive{
-    border: 1px solid #1C1C1C;
+
+.video_title{
+    float: left;
+    margin-top:12px;
+    color:#fff;
+    display: block;
 }
+.video_share{
+    float:right;
+    margin-bottom: 10px;
+    
+}
+.share_icons_row{
+display: flex;
+flex-direction: row;
+}
+.share_icons_row Button, .share_icons_row Button:focus{
+    outline: none;
+}
+.share_icons{
+    background:transparent;
+    display:none;
+list-style: none;
+}
+.share_icons_row button{
+width: 121px;
+border-radius:0px;
+height: 46px;
+color: #6B6863;
+background: #121212;
+}
+.share_icons_row button:hover{
+    width: 121px;
+    height: 46px;
+    background: #121212;
+}
+.share_icons_row button img{
+    margin-left:10px;
+}
+.share_icons nav li{
+ margin:10px 10px 0px 10px;
+ display: inline-flex;
+}
+@media (max-width:470px)
+{
+    .share_icons nav li{
+        margin:10px 5px 0px 1px !important;
+        display: inline-flex;
+       
+       }
+
+}
+@media (max-width:350px)
+{
+
+       .share_icons nav li img{
+           width:22px !important;
+       }
+}
+  .share {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -40px;
+    border-radius: 80px;
+  }
+  
+  .share span {
+    width: 200px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    color: #f28500;
+  }
+  
+  .share nav {
+    font-size: 0;
+  }
+  
+  .share a {
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    color: white;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .share a:nth-child(1) {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 0;
+  }
+  
+  .share a:nth-child(1):hover {
+    background-color: #3b5998;
+  }
+  
+  .share a:nth-child(2):hover {
+    background-color: #71c5ec;
+  }
+  
+  .share a:nth-child(3):hover {
+    background-color: #ffa500;
+  }
+  
+  .share a:nth-child(4) {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 0;
+  }
+  
+  .share a:nth-child(4):hover {
+    background-color: #ea4335;
+  }
+  
+  .share:hover span {
+    opacity: 0;
+  }
+  
+  .share:hover a {
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #f28500;
+    font-size: 28px;
+  }
+  
+  .share:hover a:hover {
+    color: white;
+  }
+  
